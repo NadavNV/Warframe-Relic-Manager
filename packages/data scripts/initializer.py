@@ -4,13 +4,6 @@ import json
 import re
 
 
-class SetEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, set):
-            return list(obj)
-        return json.JSONEncoder.default(self, obj)
-
-
 def scrape_relics_to_json():
     url = "https://www.warframe.com/droptables"
     print("Fetching drop tables...")
@@ -100,7 +93,7 @@ def scrape_relics_to_json():
                             else:
                                 # Covers the ~2.00% chance items
                                 rarity = "Rare"
-                            relic_data[current_relic][rarity].append(component)
+                            relic_data[current_relic][rarity].append(component.replace(" Prime", ""))
                         else:
                             print(f"Error parsing rarity of {component}, {drop_chance_text}")
                             break
@@ -148,7 +141,7 @@ def scrape_relics_to_json():
 
     # 7. Translate the Python dictionary into formatted JSON
     relic_data_json = json.dumps(relic_data, indent=4)
-    components_json = json.dumps(components, indent=4, cls=SetEncoder)
+    components_json = json.dumps(components, indent=4)
 
     # Save to a file
     with open("../../data/relic_drops.json", "w") as outfile:
