@@ -43,7 +43,7 @@ env.bak/
 venv.bak/
 
 # Streamlit specific
-.streamlit/secrets.toml
+packages/data_scripts/.streamlit/secrets.toml
 
 # =========================
 # OS / Code Editors
