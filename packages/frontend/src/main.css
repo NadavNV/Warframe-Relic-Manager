@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orokin-gold: #ffd700;
+  --color-orokin-dark: #1a1a1a;
+
+  --color-void-blue: #00f0ff;
+  --color-void-dark: #0b132b;
+
+  --color-grineer-green: #4b5320;
+  --color-corpus-cyan: #00ffff;
+
+  /* Use a clean sans-serif for UIs */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* 3. Global Reset for the Dark Theme */
+@layer base {
+  body {
+    background-color: var(--color-void-dark);
+    color: #e5e7eb; /* Tailwind's gray-200 */
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}

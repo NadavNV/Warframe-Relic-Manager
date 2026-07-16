@@ -146,7 +146,7 @@ def scrape_relics_to_json():
     # Save to a file
     with open("../../data/relic_drops.json", "w") as outfile:
         outfile.write(relic_data_json)
-    with open("master_items_initial.json", "w") as outfile:
+    with open("../../data/temp_master_items.json", "w") as outfile:
         outfile.write(components_json)
 
     print("Successfully scraped and saved to JSON!")
