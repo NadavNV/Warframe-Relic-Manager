@@ -1,0 +1,62 @@
+# =========================
+# Project Specific
+# =========================
+# Ignore local user data or temporary JSON dumps used for testing
+user_inventory.json
+local_test_data.json
+data/temp_*.json
+
+# =========================
+# Node / React (Web App)
+# =========================
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build Outputs (Vercel/Netlify will generate these on their end)
+build/
+dist/
+.next/
+out/
+
+# Environment Variables (Never commit secrets!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Python (Data Scripts / Tools)
+# =========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Streamlit specific
+.streamlit/secrets.toml
+
+# =========================
+# OS / Code Editors
+# =========================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+.vscode/settings.json
+
+# IntelliJ / PyCharm
+.idea/
