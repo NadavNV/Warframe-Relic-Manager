@@ -4,16 +4,18 @@ import uuid
 from github import Github
 
 # --- Configuration ---
-LOCAL_MASTER_PATH = "../../data/master_items.json"
+LOCAL_ITEMS_PATH = "../../data/master_items.json"
 LOCAL_RELICS_PATH = "../../data/relic_drops.json"
 REPO_NAME = "NadavNV/Warframe-Relic-Manager"
+# Max relics per row
+MAX_COLS = 9
 
 
-def update_local_files(relic_list):
+def update_local_files(relic_list, new_items):
     """Updates master_items and relic_drops with the new relic data."""
     # 1. Load data
-    with open(LOCAL_MASTER_PATH, 'r', encoding='utf-8') as f:
-        master_data = json.load(f)
+    with open(LOCAL_ITEMS_PATH, 'r', encoding='utf-8') as f:
+        master_data: dict = json.load(f)
 
     with open(LOCAL_RELICS_PATH, 'r', encoding='utf-8') as f:
         relic_drops_data = json.load(f)
@@ -21,22 +23,25 @@ def update_local_files(relic_list):
     # 2. Process all relics in memory
     for relic_data in relic_list:
         # Update master_items structure
+        # 1. Add relics to existing items
         all_rewards = relic_data['Common'] + relic_data['Uncommon'] + relic_data['Rare']
         for entry in all_rewards:
-            family, part = entry['Family'], entry['Part']
-            if family in master_data and part in master_data[family]:
-                if relic_data['Name'] not in master_data[family][part]['relics']:
-                    master_data[family][part]['relics'].append(relic_data['Name'])
+            item, part = entry['Item'], entry['Part']
+            if item in master_data and part in master_data[item]:
+                if relic_data['Name'] not in master_data[item][part]['relics']:
+                    master_data[item][part]['relics'].append(relic_data['Name'])
+        # 2. Add new items
+        master_data.update(new_items)
 
         # Update relic_drops structure
         relic_drops_data[relic_data['Name']] = {
-            "Common": [f"{i['Family']} {i['Part']}" for i in relic_data['Common']],
-            "Uncommon": [f"{i['Family']} {i['Part']}" for i in relic_data['Uncommon']],
-            "Rare": [f"{i['Family']} {i['Part']}" for i in relic_data['Rare']]
+            "Common": [f"{i['Item']} {i['Part']}" for i in relic_data['Common']],
+            "Uncommon": [f"{i['Item']} {i['Part']}" for i in relic_data['Uncommon']],
+            "Rare": [f"{i['Item']} {i['Part']}" for i in relic_data['Rare']]
         }
 
     # 3. Write data
-    with open(LOCAL_MASTER_PATH, 'w', encoding='utf-8') as f:
+    with open(LOCAL_ITEMS_PATH, 'w', encoding='utf-8') as f:
         json.dump(master_data, f, indent=4)
 
     with open(LOCAL_RELICS_PATH, 'w', encoding='utf-8') as f:
@@ -58,7 +63,7 @@ def create_pull_request(patch_num):
         file_info = repo.get_contents(path, ref=branch_name)
         repo.update_file(file_info.path, message, content, file_info.sha, branch=branch_name)
 
-    with open(LOCAL_MASTER_PATH, 'r') as f:
+    with open(LOCAL_ITEMS_PATH, 'r') as f:
         master_content = f.read()
     with open(LOCAL_RELICS_PATH, 'r') as f:
         relic_content = f.read()
@@ -69,87 +74,204 @@ def create_pull_request(patch_num):
     return repo.create_pull(title=f"Patch {patch_num} Update", body="", head=branch_name, base="main").html_url
 
 
+def add_items(rarity, rewards, relic_name, pending_items):
+    for reward in rewards:
+        item, part = reward['Item'], reward['Part']
+        # Safety check
+        if not item or not part:
+            continue
+
+        if item not in pending_items:
+            pending_items[item] = {}
+
+        if part not in pending_items[item]:
+            # This creates the specific footprint you need
+            pending_items[item][part] = {
+                "rarity": rarity,
+                "count": 1,
+                "relics": [relic_name]
+            }
+        else:
+            if relic_name not in pending_items[item][part]['relics']:
+                pending_items[item][part]['relics'].append(relic_name)
+
+
+def remove_relic(relic_idx, pending_relics, pending_items):
+    """Removes a relic by index and prunes empty parts/items from pending_items."""
+    if relic_idx < 0 or relic_idx >= len(pending_relics):
+        return
+
+    relic_to_remove = pending_relics.pop(relic_idx)['Name']
+
+    items_to_remove = []
+    for item_name, item_parts in pending_items.items():
+        parts_to_remove = []
+        for part_name, part_data in item_parts.items():
+            if relic_to_remove in part_data['relics']:
+                part_data['relics'].remove(relic_to_remove)
+            # If no relics left for this part, mark for removal
+            if not part_data['relics']:
+                parts_to_remove.append(part_name)
+
+        # Cleanup empty parts
+        for p in parts_to_remove:
+            del pending_items[item_name][p]
+
+        # If item has no parts left, mark item for removal
+        if not pending_items[item_name]:
+            items_to_remove.append(item_name)
+
+    # Cleanup empty items
+    for j in items_to_remove:
+        del pending_items[j]
+
+
 def main():
+    st.set_page_config(page_title="Relic Manager", layout="wide")
     st.title("Warframe Relic Manager")
 
     if 'pending_relics' not in st.session_state:
         st.session_state.pending_relics = []
+    if 'pending_items' not in st.session_state:
+        st.session_state.pending_items = {}
+    if 'form_key' not in st.session_state:
+        st.session_state.form_key = 0
+    pad_left, form, pad_right = st.columns(3)
+    with form:
+        # Patch Number Input
+        patch_num = st.text_input("Patch Number", placeholder="e.g., 39.0.5")
 
-    # Patch Number Input
-    patch_num = st.text_input("Patch Number", placeholder="e.g., 39.0.5")
+        col_a, col_b, col_c = st.columns(3)
+        with col_a:
+            era = st.selectbox("Era", ["Axi", "Lith", "Meso", "Neo"])
+        with col_b:
+            letter = st.text_input("Letter", key=f"relic_letter_{st.session_state.form_key}")
+        with col_c:
+            number = st.text_input("Relic Number", key=f"relic_number_{st.session_state.form_key}")
 
-    col_a, col_b, col_c = st.columns(3)
-    with col_a:
-        era = st.selectbox("Era", ["Axi", "Lith", "Meso", "Neo"])
-    with col_b:
-        letter = st.text_input("Letter")
-    with col_c:
-        number = st.text_input("Relic Number")
+        st.subheader("Common")
+        common_rewards = []
+        for j in range(1, 4):
+            c1, c2 = st.columns(2)
+            with c1:
+                i = st.text_input(f"{j}. Item", key=f"c_item_{j}_{st.session_state.form_key}")
+            with c2:
+                p = st.text_input(f"Part", key=f"c_part_{j}_{st.session_state.form_key}")
+            common_rewards.append({"Item": i, "Part": p})
 
-    st.subheader("Common")
-    common_rewards = []
-    for i in range(1, 4):
+        st.subheader("Uncommon")
+        uncommon_rewards = []
+        for j in range(4, 6):
+            c1, c2 = st.columns(2)
+            with c1:
+                i = st.text_input(f"{j}. Item", key=f"u_item_{j}_{st.session_state.form_key}")
+            with c2:
+                p = st.text_input(f"Part", key=f"u_part_{j}_{st.session_state.form_key}")
+            uncommon_rewards.append({"Item": i, "Part": p})
+
+        st.subheader("Rare")
         c1, c2 = st.columns(2)
         with c1:
-            f = st.text_input(f"{i}. Item", key=f"c_fam_{i}")
+            rare_i = st.text_input("6. Item", key=f"r_item_{st.session_state.form_key}")
         with c2:
-            p = st.text_input(f"Part", key=f"c_part_{i}")
-        common_rewards.append({"Family": f, "Part": p})
+            rare_p = st.text_input("Part", key=f"r_part_{st.session_state.form_key}")
 
-    st.subheader("Uncommon")
-    uncommon_rewards = []
-    for i in range(4, 6):
-        c1, c2 = st.columns(2)
-        with c1:
-            f = st.text_input(f"{i}. Item", key=f"u_fam_{i}")
-        with c2:
-            p = st.text_input(f"Part", key=f"u_part_{i}")
-        uncommon_rewards.append({"Family": f, "Part": p})
+        if st.button("Add Relic to Pending"):
+            if letter and number:
+                relic_name = f"{era} {letter.upper()}{number}"
+                st.session_state.pending_relics.append({
+                    "Name": relic_name,
+                    "Common": [c for c in common_rewards if c['Item']],
+                    "Uncommon": [u for u in uncommon_rewards if u['Item']],
+                    "Rare": [{"Item": rare_i, "Part": rare_p}]
+                })
+                add_items('Common', common_rewards, relic_name, st.session_state.pending_items)
+                add_items('Uncommon', uncommon_rewards, relic_name, st.session_state.pending_items)
+                add_items('Rare', [{"Item": rare_i, "Part": rare_p}], relic_name, st.session_state.pending_items)
 
-    st.subheader("Rare")
-    c1, c2 = st.columns(2)
-    with c1:
-        rare_f = st.text_input("6. Item", key="r_fam")
-    with c2:
-        rare_p = st.text_input("Part", key="r_part")
-
-    if st.button("Add Relic to Pending"):
-        if rare_f and number:
-            st.session_state.pending_relics.append({
-                "Name": f"{era} {letter.upper()}{number}",
-                "Common": [c for c in common_rewards if c['Family']],
-                "Uncommon": [u for u in uncommon_rewards if u['Family']],
-                "Rare": [{"Family": rare_f, "Part": rare_p}]
-            })
-            st.rerun()
+                # --- CLEAR FORM (Simplified) ---
+                # Because you appended form_key to the widget keys,
+                # you just increment it to force Streamlit to draw brand new empty widgets!
+                st.session_state.form_key += 1
+                st.rerun()
+            else:
+                st.toast("Letter and number are required")
 
     st.divider()
-    st.header("Pending Relics")
-    if st.session_state.pending_relics:
-        for idx, relic in enumerate(st.session_state.pending_relics):
-            st.subheader(f"{relic['Name']}")
-            for item in relic['Common']:
-                st.markdown(f'<span style="color:#CD7F32">● {item["Family"]} {item["Part"]}</span>',
-                            unsafe_allow_html=True)
-            for item in relic['Uncommon']:
-                st.markdown(f'<span style="color:#808080">● {item["Family"]} {item["Part"]}</span>',
-                            unsafe_allow_html=True)
-            for item in relic['Rare']:
-                st.markdown(f'<span style="color:#FFD700">★ {item["Family"]} {item["Part"]}</span>',
-                            unsafe_allow_html=True)
 
-            if st.button(f"Remove {relic['Name']}", key=f"del_{idx}"):
-                st.session_state.pending_relics.pop(idx)
-                st.rerun()
+    # Optional debug view
+    if st.session_state.pending_items:
+        with st.expander("View Pending Items JSON"):
+            st.json(st.session_state.pending_items)
+
+    st.header("Pending Relics")
+
+    if st.session_state.pending_relics:
+        # Iterate over relics in chunks to create rows
+        for idx_start in range(0, len(st.session_state.pending_relics), MAX_COLS):
+            row_relics = st.session_state.pending_relics[idx_start: idx_start + MAX_COLS]
+
+            # --- Centering Math ---
+            empty_slots = MAX_COLS - len(row_relics)
+            left_spacer = empty_slots / 2
+            right_spacer = empty_slots / 2
+
+            weights = []
+            if left_spacer > 0:
+                weights.append(left_spacer)
+            weights.extend([1] * len(row_relics))  # Give each relic card a weight of 1
+            if right_spacer > 0:
+                weights.append(right_spacer)
+
+            cols = st.columns(weights)
+            col_offset = 1 if left_spacer > 0 else 0
+
+            # Draw each relic card in its column
+            for local_idx, relic in enumerate(row_relics):
+                global_idx = idx_start + local_idx
+
+                with cols[col_offset + local_idx]:
+                    # Using a container with a border makes side-by-side UI much cleaner
+                    with st.container(border=True):
+                        st.subheader(f"{relic['Name']}")
+
+                        padded_list = list(relic['Common'])
+                        while len(padded_list) < 3:
+                            padded_list.append({"Item": "", "Part": ""})
+                        for item in padded_list:
+                            st.markdown(f'<span style="color:#CD7F32">● {item["Item"]} {item["Part"]}</span>',
+                                        unsafe_allow_html=True)
+
+                        padded_list = list(relic['Uncommon'])
+                        while len(padded_list) < 2:
+                            padded_list.append({"Item": "", "Part": ""})
+                        for item in padded_list:
+                            st.markdown(f'<span style="color:#808080">● {item["Item"]} {item["Part"]}</span>',
+                                        unsafe_allow_html=True)
+
+                        for item in relic['Rare']:
+                            st.markdown(f'<span style="color:#FFD700">★ {item["Item"]} {item["Part"]}</span>',
+                                        unsafe_allow_html=True)
+
+                        # Set use_container_width=True so the button fits the card nicely
+                        if st.button(f"Remove {relic['Name']}", key=f"del_{global_idx}", use_container_width=True):
+                            remove_relic(global_idx, st.session_state.pending_relics, st.session_state.pending_items)
+                            st.rerun()
+
     else:
         st.info("No relics added yet. Use the form above to build a list before submitting.")
 
-    if st.session_state.pending_relics and patch_num:
+    if st.session_state.pending_relics:
+        # The button is always visible as long as you have relics
         if st.button("Update Local & Create PR"):
-            update_local_files(st.session_state.pending_relics)
-            pr_url = create_pull_request(patch_num)
-            st.success(f"Success! [View PR]({pr_url})")
-            st.session_state.pending_relics = []
+            if not patch_num:
+                # Throw a loud error if they forgot the patch number
+                st.error("⚠️ Please enter a Patch Number at the top of the app before submitting!")
+            else:
+                update_local_files(st.session_state.pending_relics, st.session_state.pending_items)
+                pr_url = create_pull_request(patch_num)
+                st.success(f"Success! [View PR]({pr_url})")
+                st.session_state.pending_relics = []
 
 
 if __name__ == "__main__":
