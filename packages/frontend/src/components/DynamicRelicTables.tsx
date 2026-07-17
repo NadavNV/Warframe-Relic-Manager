@@ -1,12 +1,15 @@
 import { useState } from "react";
 import itemDataRaw from "../../../../data/master_items.json";
+import relicDataRaw from "../../../../data/relic_drops.json";
 import type ItemSchema from "../types/ItemSchema";
 import type ComponentInstance from "../types/ComponentInstance";
 import type ItemInstance from "../types/ItemInstance";
 import type DesiredItem from "../types/DesiredItem";
+import type RelicSchema from "../types/RelicSchema";
 
 // Cast the raw JSON to the explicit type
 const itemData = itemDataRaw as Record<string, ItemSchema>;
+const relicData = relicDataRaw as Record<string, RelicSchema>;
 
 interface ItemTableProps {
   desiredItems: DesiredItem[];
@@ -45,17 +48,23 @@ const getSchemaKey = (schema: ComponentInstance[]): string => {
   return schema.map((component) => component.displayName).join("|");
 };
 
-const getRarityClass = (rarity: "Common" | "Uncommon" | "Rare"): string => {
-  switch (rarity) {
-    case "Common":
-      return "bg-[#CD7F32]";
-
-    case "Uncommon":
-      return "bg-[#808080]";
-
-    case "Rare":
-      return "bg-[#FFD700]";
+const getRarityClass = (relicName: string, componentName: string): string => {
+  const schema = relicData[relicName];
+  if (!schema) {
+    // Fallback if relic isn't found
+    return "bg-gray-100";
   }
+  if (schema.common.includes(componentName)) {
+    return "bg-[#CD7F32]";
+  }
+  if (schema.uncommon.includes(componentName)) {
+    return "bg-[#808080]";
+  }
+  if (schema.rare.includes(componentName)) {
+    return "bg-[#FFD700]";
+  }
+
+  return "bg-gray-100"; // Fallback if component isn't matched
 };
 
 const getRelicColumns = (relics: string[], itemsPerColumn = 8): string[][] => {
@@ -215,35 +224,35 @@ export default function DynamicRelicTables({
                     const componentData =
                       itemData[item.itemName]?.[component.componentName];
 
-                    const relicData = componentData?.relics ?? [];
-
-                    const rarityClass = componentData
-                      ? getRarityClass(componentData.rarity)
-                      : "bg-void-dark";
+                    const relicList = componentData?.relics ?? [];
 
                     return (
                       <td
                         key={cellId}
                         onClick={() => toggleCell(cellId)}
-                        className={`p-2 border border-gray-800 text-base cursor-pointer transition-colors ${
-                          isCompleted
-                            ? "bg-[#90EE90]"
-                            : `${rarityClass} hover:brightness-110`
-                        }`}
+                        className={`p-2 border border-gray-800 text-base cursor-pointer transition-colors`}
                       >
                         {isCompleted ? (
-                          <span className="flex items-center justify-center text-2xl font-bold text-[#006400]">
+                          <span className="flex items-center justify-center text-2xl font-bold text-[#006400] bg-[#90EE90]">
                             ✓
                           </span>
                         ) : (
-                          <div className="flex gap-4">
-                            {getRelicColumns(relicData).map(
+                          <div className="flex">
+                            {getRelicColumns(relicList).map(
                               (column, columnIndex) => (
-                                <div key={columnIndex}>
+                                <div
+                                  key={columnIndex}
+                                  className="flex flex-col"
+                                >
                                   {column.map((relic) => (
                                     <span
                                       key={relic}
-                                      className="block whitespace-nowrap text-black"
+                                      className={`block whitespace-nowrap text-black ${getRarityClass(
+                                        relic,
+                                        item.itemName +
+                                          " " +
+                                          component.componentName,
+                                      )}`}
                                     >
                                       {relic}
                                     </span>
