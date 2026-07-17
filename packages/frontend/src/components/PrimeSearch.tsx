@@ -1,15 +1,14 @@
 import { useState, useRef, useEffect, type ChangeEvent } from "react";
 import itemDataRaw from "../../../../data/master_items.json";
-import type DesiredItem from "../types/DesiredItem";
 
 // Extract the top-level keys (the prime items) from the JSON[cite: 1]
 const primeItems: string[] = Object.keys(itemDataRaw);
 
 interface PrimeSearchProps {
-  setDesiredItems: React.Dispatch<React.SetStateAction<DesiredItem[]>>;
+  onAddItem: (itemName: string) => void;
 }
 
-export default function PrimeSearch({ setDesiredItems }: PrimeSearchProps) {
+export default function PrimeSearch({ onAddItem }: PrimeSearchProps) {
   const [inputValue, setInputValue] = useState("");
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -66,10 +65,7 @@ export default function PrimeSearch({ setDesiredItems }: PrimeSearchProps) {
     }
 
     // 4. Add the successfully validated item
-    setDesiredItems((prev) => [
-      ...prev,
-      { id: crypto.randomUUID(), itemName: matchedItem },
-    ]);
+    onAddItem(matchedItem);
 
     // Reset the input field
     setInputValue("");
@@ -92,11 +88,15 @@ export default function PrimeSearch({ setDesiredItems }: PrimeSearchProps) {
 
   return (
     <div className="flex flex-col items-center w-full max-w-xl mx-auto my-16">
-      {/* Search and Add Row */}
       <div
         ref={wrapperRef}
         className="relative w-full flex flex-col items-center"
       >
+        <p className="text-gray-400 italic text-sm mb-3 text-center">
+          Search for a Prime Warframe, Weapon, or Companion to begin tracking
+          its relics.
+        </p>
+
         <div className="flex w-full gap-3">
           <input
             type="text"
