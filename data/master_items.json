@@ -1,7 +1,6 @@
 {
   "Akstiletto": {
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A1",
         "Axi H2",
@@ -13,7 +12,6 @@
       "count": 2
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi A7",
         "Axi H1",
@@ -25,7 +23,6 @@
       "count": 2
     },
     "Link": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi N1",
         "Lith V7",
@@ -36,7 +33,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith A1",
         "Lith A2",
@@ -49,7 +45,6 @@
   },
   "Trinity": {
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi A1",
         "Axi C2",
@@ -63,7 +58,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi C1",
         "Axi V3",
@@ -76,7 +70,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi H1",
         "Axi H2",
@@ -88,7 +81,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S1",
         "Lith K1",
@@ -102,7 +94,6 @@
   },
   "Fragor": {
     "Head": {
-      "rarity": "Common",
       "relics": [
         "Axi A1",
         "Axi B2",
@@ -114,7 +105,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A7",
         "Axi F1",
@@ -126,7 +116,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C2",
         "Axi N4",
@@ -141,7 +130,6 @@
   },
   "Dual Kamas": {
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A1",
         "Meso F1",
@@ -152,7 +140,6 @@
       "count": 2
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi D3",
         "Meso D1",
@@ -161,7 +148,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi N3",
         "Axi V1",
@@ -177,7 +163,6 @@
   },
   "Braton": {
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi A1",
         "Axi A4",
@@ -229,7 +214,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi A16",
         "Axi A7",
@@ -280,7 +264,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi A17",
         "Axi A3",
@@ -325,7 +308,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi C9",
         "Axi H6",
@@ -365,7 +347,6 @@
   },
   "Nikana": {
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi A1",
         "Axi N12",
@@ -378,7 +359,6 @@
       "count": 1
     },
     "Hilt": {
-      "rarity": "Rare",
       "relics": [
         "Axi N2",
         "Axi N4",
@@ -390,7 +370,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S5",
         "Meso N4",
@@ -404,7 +383,6 @@
   },
   "Aksomati": {
     "Link": {
-      "rarity": "Rare",
       "relics": [
         "Axi A10",
         "Axi A13",
@@ -415,7 +393,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi B4",
         "Axi G6",
@@ -429,7 +406,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi D2",
         "Axi G4",
@@ -444,7 +420,6 @@
       "count": 2
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith B7",
         "Meso D6",
@@ -457,7 +432,6 @@
   },
   "Wukong": {
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A10",
         "Axi T6",
@@ -471,7 +445,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A11",
         "Axi P3",
@@ -484,7 +457,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi G2",
         "Axi T4",
@@ -498,7 +470,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi W1",
         "Axi W2",
@@ -512,7 +483,6 @@
   },
   "Paris": {
     "Grip": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A10",
         "Axi G15",
@@ -540,7 +510,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi A14",
         "Axi A19",
@@ -579,7 +548,6 @@
       "count": 1
     },
     "Lower Limb": {
-      "rarity": "Common",
       "relics": [
         "Axi A18",
         "Axi B3",
@@ -621,7 +589,6 @@
       "count": 1
     },
     "Upper Limb": {
-      "rarity": "Common",
       "relics": [
         "Axi D5",
         "Axi H4",
@@ -668,7 +635,6 @@
       "count": 1
     },
     "String": {
-      "rarity": "Common",
       "relics": [
         "Axi N12",
         "Axi O2",
@@ -714,7 +680,6 @@
   },
   "Akbronco": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi A10",
         "Axi S11",
@@ -750,7 +715,6 @@
       "count": 1
     },
     "Link": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A18",
         "Axi A9",
@@ -777,14 +741,12 @@
       "count": 1
     },
     "Bronco Prime": {
-      "rarity": "Rare",
       "relics": [],
       "count": 2
     }
   },
   "Stradavar": {
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi A10",
         "Axi W1",
@@ -796,7 +758,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi B3",
         "Axi R3",
@@ -809,7 +770,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith M4",
         "Lith M5",
@@ -821,7 +781,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith S10",
         "Lith S13",
@@ -835,7 +794,6 @@
   },
   "Atlas": {
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi A11",
         "Axi A6",
@@ -846,7 +804,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B3",
         "Lith B8",
@@ -859,7 +816,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi F1",
         "Lith N4",
@@ -872,7 +828,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Lith D1",
         "Lith K6",
@@ -887,7 +842,6 @@
   },
   "Pangolin": {
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A11",
         "Axi A13",
@@ -901,7 +855,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Axi C6",
         "Axi I1",
@@ -915,7 +868,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi P4",
         "Lith P5",
@@ -929,7 +881,6 @@
   },
   "Zhuge": {
     "String": {
-      "rarity": "Common",
       "relics": [
         "Axi A11",
         "Axi M1",
@@ -943,7 +894,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A6",
         "Axi T4",
@@ -957,7 +907,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B3",
         "Axi D1",
@@ -967,7 +916,6 @@
       "count": 1
     },
     "Grip": {
-      "rarity": "Common",
       "relics": [
         "Axi P3",
         "Lith N6",
@@ -981,7 +929,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Neo Z3",
         "Neo Z5",
@@ -994,7 +941,6 @@
   },
   "Fang": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi A11",
         "Axi G4",
@@ -1044,7 +990,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Axi A16",
         "Axi A4",
@@ -1093,7 +1038,6 @@
       "count": 2
     },
     "Blade": {
-      "rarity": "Common",
       "relics": [
         "Axi B1",
         "Axi B2",
@@ -1145,7 +1089,6 @@
   },
   "Burston": {
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi A11",
         "Axi A13",
@@ -1192,7 +1135,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi A22",
         "Axi B7",
@@ -1240,7 +1182,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G3",
         "Axi G4",
@@ -1278,7 +1219,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi G5",
         "Axi O3",
@@ -1328,7 +1268,6 @@
   },
   "Akbolto": {
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Axi A12",
         "Axi A3",
@@ -1339,7 +1278,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi G2",
         "Axi H5",
@@ -1352,7 +1290,6 @@
       "count": 1
     },
     "Link": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi H4",
         "Lith S7",
@@ -1365,7 +1302,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith A3",
         "Lith C2",
@@ -1378,7 +1314,6 @@
   },
   "Helios": {
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A12",
         "Axi N5",
@@ -1390,7 +1325,6 @@
       "count": 1
     },
     "Carapace": {
-      "rarity": "Common",
       "relics": [
         "Axi A3",
         "Axi C3",
@@ -1406,7 +1340,6 @@
       "count": 1
     },
     "Cerebrum": {
-      "rarity": "Rare",
       "relics": [
         "Axi H1",
         "Axi H2",
@@ -1418,7 +1351,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith C3",
         "Lith N2",
@@ -1434,7 +1366,6 @@
   },
   "Banshee": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A12",
         "Axi C3",
@@ -1449,7 +1380,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi B1",
         "Axi B2",
@@ -1460,7 +1390,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi H5",
         "Lith B5",
@@ -1473,7 +1402,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Meso B2",
         "Neo B1",
@@ -1485,7 +1413,6 @@
   },
   "Mirage": {
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi A12",
         "Axi H4",
@@ -1497,7 +1424,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi H5",
         "Axi R2",
@@ -1509,7 +1435,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi M1",
         "Lith M7",
@@ -1520,7 +1445,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi T2",
         "Lith W1",
@@ -1536,7 +1460,6 @@
   },
   "Kogake": {
     "Boot": {
-      "rarity": "Common",
       "relics": [
         "Axi A12",
         "Axi A3",
@@ -1549,7 +1472,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C4",
         "Axi K4",
@@ -1561,7 +1483,6 @@
       "count": 1
     },
     "Gauntlet": {
-      "rarity": "Rare",
       "relics": [
         "Lith K2",
         "Lith K5",
@@ -1574,7 +1495,6 @@
   },
   "Orthos": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A13",
         "Axi A17",
@@ -1599,7 +1519,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Axi A6",
         "Axi G10",
@@ -1640,7 +1559,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi D6",
         "Axi T10",
@@ -1663,7 +1581,6 @@
   },
   "Inaros": {
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi A13",
         "Axi G7",
@@ -1677,7 +1594,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi I1",
         "Axi I2",
@@ -1688,7 +1604,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K12",
         "Axi W1",
@@ -1700,7 +1615,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K6",
         "Axi O5",
@@ -1716,7 +1630,6 @@
   },
   "Karyst": {
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A14",
         "Axi B4",
@@ -1730,7 +1643,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi C6",
         "Axi G6",
@@ -1745,7 +1657,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi K12",
         "Axi K6",
@@ -1758,7 +1669,6 @@
   },
   "Nidus": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A14",
         "Lith K10",
@@ -1772,7 +1682,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi N10",
         "Axi N9",
@@ -1782,7 +1691,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Axi N12",
         "Lith N12",
@@ -1794,7 +1702,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Meso A3",
         "Meso B5",
@@ -1810,7 +1717,6 @@
   },
   "Zakti": {
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi A14",
         "Axi T6",
@@ -1825,7 +1731,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi Z1",
         "Lith Z3",
@@ -1835,7 +1740,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith D4",
         "Lith G7",
@@ -1851,7 +1755,6 @@
   },
   "Volnus": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi A14",
         "Lith G5",
@@ -1865,7 +1768,6 @@
       "count": 1
     },
     "Head": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B5",
         "Axi C7",
@@ -1879,7 +1781,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Rare",
       "relics": [
         "Axi V11",
         "Meso V7",
@@ -1890,7 +1791,6 @@
   },
   "Oberon": {
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A15",
         "Axi O1",
@@ -1902,7 +1802,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi H2",
         "Axi N5",
@@ -1915,7 +1814,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith H2",
         "Lith M3",
@@ -1928,7 +1826,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Lith O1",
         "Meso O1",
@@ -1941,7 +1838,6 @@
   },
   "Ivara": {
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A15",
         "Axi A9",
@@ -1953,7 +1849,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B4",
         "Axi S13",
@@ -1966,7 +1861,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Lith D3",
         "Meso B5",
@@ -1980,7 +1874,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Lith I1",
         "Neo I1",
@@ -1992,7 +1885,6 @@
   },
   "Baza": {
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi A15",
         "Axi N7",
@@ -2006,7 +1898,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Rare",
       "relics": [
         "Axi B3",
         "Lith B9",
@@ -2016,7 +1907,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi B4",
         "Axi S13",
@@ -2028,7 +1918,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi I2",
         "Axi Z1",
@@ -2043,7 +1932,6 @@
   },
   "Sybaris": {
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi A15",
         "Axi K4",
@@ -2055,7 +1943,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi B2",
         "Axi K2",
@@ -2068,7 +1955,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C4",
         "Neo G3",
@@ -2079,7 +1965,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Axi S13",
         "Axi S6",
@@ -2093,7 +1978,6 @@
   },
   "Afuris": {
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Axi A16",
         "Axi A17",
@@ -2103,7 +1987,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi B6",
         "Axi B9",
@@ -2117,7 +2000,6 @@
       "count": 1
     },
     "Link": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G11",
         "Meso A5",
@@ -2128,7 +2010,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi N10",
         "Lith H9",
@@ -2145,7 +2026,6 @@
   },
   "Revenant": {
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A16",
         "Axi B8",
@@ -2158,7 +2038,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi C9",
         "Axi F2",
@@ -2173,7 +2052,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi D5",
         "Lith S14",
@@ -2184,7 +2062,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith R2",
         "Lith R3",
@@ -2198,7 +2075,6 @@
   },
   "Harrow": {
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A16",
         "Axi S12",
@@ -2212,7 +2088,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi H7",
         "Lith H10",
@@ -2226,7 +2101,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K6",
         "Lith B11",
@@ -2239,7 +2113,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi N10",
         "Axi S15",
@@ -2254,7 +2127,6 @@
   },
   "Scourge": {
     "Blade": {
-      "rarity": "Common",
       "relics": [
         "Axi A16",
         "Lith R2",
@@ -2269,7 +2141,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K11",
         "Axi T11",
@@ -2282,7 +2153,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Axi S10",
         "Axi S14",
@@ -2294,7 +2164,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi S11",
         "Axi S12",
@@ -2307,7 +2176,6 @@
   },
   "Shade": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A17",
         "Axi H8",
@@ -2320,7 +2188,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B6",
         "Lith A6",
@@ -2332,7 +2199,6 @@
       "count": 1
     },
     "Cerebrum": {
-      "rarity": "Common",
       "relics": [
         "Axi G11",
         "Lith C12",
@@ -2346,7 +2212,6 @@
       "count": 1
     },
     "Carapace": {
-      "rarity": "Rare",
       "relics": [
         "Axi S16",
         "Axi S19",
@@ -2358,7 +2223,6 @@
   },
   "Wisp": {
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi A17",
         "Axi B7",
@@ -2372,7 +2236,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi F2",
         "Lith A7",
@@ -2385,7 +2248,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi W3",
         "Axi W4",
@@ -2396,7 +2258,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Lith W3",
         "Lith W4",
@@ -2409,7 +2270,6 @@
   },
   "Acceltra": {
     "Stock": {
-      "rarity": "Rare",
       "relics": [
         "Axi A18",
         "Axi A19",
@@ -2419,7 +2279,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi M6",
         "Lith C11",
@@ -2434,7 +2293,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi O6",
         "Axi Z2",
@@ -2449,7 +2307,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Lith A11",
         "Meso A5",
@@ -2463,7 +2320,6 @@
   },
   "Hildryn": {
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A18",
         "Axi L6",
@@ -2475,7 +2331,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi H6",
         "Axi H8",
@@ -2486,7 +2341,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi P6",
         "Axi S17",
@@ -2502,7 +2356,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi W4",
         "Lith G10",
@@ -2517,7 +2370,6 @@
   },
   "Cobra & Crane": {
     "Hilt": {
-      "rarity": "Common",
       "relics": [
         "Axi A18",
         "Axi H6",
@@ -2531,7 +2383,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B9",
         "Axi K11",
@@ -2543,7 +2394,6 @@
       "count": 1
     },
     "Guard": {
-      "rarity": "Rare",
       "relics": [
         "Axi C9",
         "Lith C10",
@@ -2555,7 +2405,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G9",
         "Axi L6",
@@ -2571,7 +2420,6 @@
   },
   "Xaku": {
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A19",
         "Axi M6",
@@ -2583,7 +2431,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi T13",
         "Lith N17",
@@ -2597,7 +2444,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi V12",
         "Lith O4",
@@ -2610,7 +2456,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith X1",
         "Meso X1",
@@ -2621,7 +2466,6 @@
   },
   "Larkspur": {
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A19",
         "Axi G10",
@@ -2634,7 +2478,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi D5",
         "Lith F3",
@@ -2647,7 +2490,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Axi L6",
         "Lith L6",
@@ -2658,7 +2500,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi S16",
         "Lith T12",
@@ -2674,7 +2515,6 @@
   },
   "Bronco": {
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi A19",
         "Axi F2",
@@ -2719,7 +2559,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi C7",
         "Axi G12",
@@ -2761,7 +2600,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi E2",
         "Axi F3",
@@ -2791,7 +2629,6 @@
   },
   "Epitaph": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi A19",
         "Axi C10",
@@ -2805,7 +2642,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi P8",
         "Axi Y2",
@@ -2817,7 +2653,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Lith E2",
         "Meso E6",
@@ -2829,14 +2664,12 @@
   },
   "Aklex": {
     "Link": {
-      "rarity": "Rare",
       "relics": [
         "Axi A2"
       ],
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A2",
         "Neo O1"
@@ -2844,14 +2677,12 @@
       "count": 1
     },
     "Lex Prime": {
-      "rarity": "Rare",
       "relics": [],
       "count": 2
     }
   },
   "Lex": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A2",
         "Axi A9",
@@ -2899,7 +2730,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi A2",
         "Axi C1",
@@ -2947,7 +2777,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi A2",
         "Axi B6",
@@ -3000,7 +2829,6 @@
   },
   "Alternox": {
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi A20",
         "Lith A12",
@@ -3009,7 +2837,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Rare",
       "relics": [
         "Axi A21",
         "Meso A9"
@@ -3017,7 +2844,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi V14",
         "Neo C9",
@@ -3026,7 +2852,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith N18",
         "Meso K8"
@@ -3036,7 +2861,6 @@
   },
   "Kompressa": {
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A20",
         "Axi A22",
@@ -3046,7 +2870,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi Y2",
         "Lith V11",
@@ -3057,7 +2880,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Lith K12",
         "Meso K7"
@@ -3067,7 +2889,6 @@
   },
   "Lavos": {
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A20",
         "Axi P10",
@@ -3077,7 +2898,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi C10",
         "Axi D6",
@@ -3088,7 +2908,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi F3",
         "Axi Y1",
@@ -3098,7 +2917,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Lith L5",
         "Lith L7",
@@ -3111,7 +2929,6 @@
   },
   "Cedo": {
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi A20",
         "Axi S18",
@@ -3123,7 +2940,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A21",
         "Axi D6",
@@ -3133,7 +2949,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi M6",
         "Lith K12",
@@ -3143,7 +2958,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith C14",
         "Neo C6",
@@ -3154,7 +2968,6 @@
   },
   "Daikyu": {
     "String": {
-      "rarity": "Common",
       "relics": [
         "Axi A20",
         "Axi V12",
@@ -3165,7 +2978,6 @@
       "count": 1
     },
     "Lower Limb": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C10",
         "Axi C11",
@@ -3176,7 +2988,6 @@
       "count": 1
     },
     "Grip": {
-      "rarity": "Rare",
       "relics": [
         "Lith D7",
         "Meso D8",
@@ -3185,7 +2996,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Lith E2",
         "Lith Q2",
@@ -3196,7 +3006,6 @@
       "count": 1
     },
     "Upper Limb": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso E7",
         "Meso P16",
@@ -3208,7 +3017,6 @@
   },
   "Velox": {
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi A20",
         "Axi P8",
@@ -3221,7 +3029,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi F2",
         "Axi S18",
@@ -3233,7 +3040,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Axi V12",
         "Meso V10",
@@ -3246,7 +3052,6 @@
   },
   "Voruna": {
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A21",
         "Lith N19"
@@ -3254,14 +3059,12 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi V14"
       ],
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Lith V11",
         "Neo V11",
@@ -3270,7 +3073,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso A12",
         "Meso D8"
@@ -3280,28 +3082,24 @@
   },
   "Styanax": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi A21"
       ],
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Lith S18"
       ],
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso Y2"
       ],
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Neo Y1"
       ],
@@ -3310,7 +3108,6 @@
   },
   "Vadarya": {
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi A21",
         "Lith N19",
@@ -3320,7 +3117,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S18",
         "Lith G14",
@@ -3331,7 +3127,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi Y3",
         "Lith L7",
@@ -3341,7 +3136,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Meso V12",
         "Meso V15"
@@ -3351,28 +3145,24 @@
   },
   "Afentis": {
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi A22"
       ],
       "count": 1
     },
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Lith Q3"
       ],
       "count": 1
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Meso A12"
       ],
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Neo C8"
       ],
@@ -3381,7 +3171,6 @@
   },
   "Dual Zoren": {
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Axi A22",
         "Axi P8",
@@ -3394,7 +3183,6 @@
       "count": 2
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi D6",
         "Neo D9"
@@ -3402,7 +3190,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith C13",
         "Lith S16",
@@ -3415,7 +3202,6 @@
   },
   "Venato": {
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Axi A22",
         "Meso G9",
@@ -3426,7 +3212,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi V13",
         "Meso V13"
@@ -3434,7 +3219,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith E2",
         "Meso A9",
@@ -3445,7 +3229,6 @@
   },
   "Hydroid": {
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A3",
         "Axi M3",
@@ -3455,7 +3238,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi C3",
         "Axi C4",
@@ -3469,7 +3251,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi H3",
         "Axi H4",
@@ -3480,7 +3261,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K5",
         "Meso B2",
@@ -3493,7 +3273,6 @@
   },
   "Cernos": {
     "String": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A3",
         "Axi K2",
@@ -3507,7 +3286,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B1",
         "Axi V4",
@@ -3520,7 +3298,6 @@
       "count": 1
     },
     "Lower Limb": {
-      "rarity": "Rare",
       "relics": [
         "Axi C1",
         "Axi C2",
@@ -3532,7 +3309,6 @@
       "count": 1
     },
     "Grip": {
-      "rarity": "Common",
       "relics": [
         "Axi H3",
         "Axi K3",
@@ -3546,7 +3322,6 @@
       "count": 1
     },
     "Upper Limb": {
-      "rarity": "Common",
       "relics": [
         "Axi N4",
         "Lith V3",
@@ -3563,7 +3338,6 @@
   },
   "Ballistica": {
     "String": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A4",
         "Meso G1",
@@ -3573,7 +3347,6 @@
       "count": 1
     },
     "Lower Limb": {
-      "rarity": "Common",
       "relics": [
         "Axi K5",
         "Axi V6",
@@ -3586,7 +3359,6 @@
       "count": 1
     },
     "Upper Limb": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi M3",
         "Lith T1",
@@ -3597,7 +3369,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith B2",
         "Lith B3",
@@ -3608,7 +3379,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith P2",
         "Lith R1",
@@ -3622,7 +3392,6 @@
   },
   "Zephyr": {
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi A4",
         "Axi O4",
@@ -3636,7 +3405,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G5",
         "Meso Z1",
@@ -3647,7 +3415,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi L3",
         "Axi O3",
@@ -3660,7 +3427,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Lith Z1",
         "Lith Z2",
@@ -3673,28 +3439,24 @@
   },
   "Akvasto": {
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi A5"
       ],
       "count": 1
     },
     "Link": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A5"
       ],
       "count": 1
     },
     "Vasto Prime": {
-      "rarity": "Rare",
       "relics": [],
       "count": 2
     }
   },
   "Vasto": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A5",
         "Axi P5",
@@ -3709,7 +3471,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi A5",
         "Axi M4",
@@ -3726,7 +3487,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi A5",
         "Lith A1",
@@ -3744,7 +3504,6 @@
   },
   "Tipedo": {
     "Ornament": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A6",
         "Axi C5",
@@ -3756,7 +3515,6 @@
       "count": 2
     },
     "Handle": {
-      "rarity": "Rare",
       "relics": [
         "Axi T2",
         "Axi T3",
@@ -3766,7 +3524,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Lith B7",
         "Lith P2",
@@ -3782,7 +3539,6 @@
   },
   "Chroma": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi A6",
         "Axi D1",
@@ -3796,7 +3552,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi C3",
         "Axi C4",
@@ -3807,7 +3562,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi R2",
         "Meso C5",
@@ -3820,7 +3574,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Lith C3",
         "Lith C4",
@@ -3831,7 +3584,6 @@
   },
   "Ash": {
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi A7",
         "Axi N1",
@@ -3842,7 +3594,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi B1",
         "Axi K12",
@@ -3854,7 +3605,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi I3",
         "Lith S3",
@@ -3866,7 +3616,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi N2",
         "Meso N2",
@@ -3882,7 +3631,6 @@
   },
   "Carrier": {
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi A7",
         "Axi K12",
@@ -3896,7 +3644,6 @@
       "count": 1
     },
     "Carapace": {
-      "rarity": "Common",
       "relics": [
         "Axi N2",
         "Lith S5",
@@ -3907,7 +3654,6 @@
       "count": 1
     },
     "Cerebrum": {
-      "rarity": "Rare",
       "relics": [
         "Lith C1",
         "Meso C1",
@@ -3919,7 +3665,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Lith V7",
         "Meso P12",
@@ -3933,7 +3678,6 @@
   },
   "Gram": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi A8",
         "Axi O4",
@@ -3945,7 +3689,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Common",
       "relics": [
         "Axi A9",
         "Lith N4",
@@ -3958,7 +3701,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Rare",
       "relics": [
         "Axi G2",
         "Axi G3",
@@ -3972,7 +3714,6 @@
   },
   "Pyrana": {
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi A8",
         "Axi C4",
@@ -3987,7 +3728,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C3",
         "Axi D3",
@@ -4000,7 +3740,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi P1",
         "Axi P2",
@@ -4016,7 +3755,6 @@
   },
   "Equinox": {
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi A8",
         "Axi P1",
@@ -4030,7 +3768,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K5",
         "Axi T3",
@@ -4042,7 +3779,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi T9",
         "Lith L1",
@@ -4053,7 +3789,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Meso E2",
         "Meso E3",
@@ -4066,7 +3801,6 @@
   },
   "Rubico": {
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi A9",
         "Axi D2",
@@ -4081,7 +3815,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi M1",
         "Lith S8",
@@ -4093,7 +3826,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi T5",
         "Lith A3",
@@ -4106,7 +3838,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Meso R1",
         "Meso R2",
@@ -4119,7 +3850,6 @@
   },
   "Kavasa": {
     "Buckle": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B1",
         "Axi K1",
@@ -4131,7 +3861,6 @@
       "count": 1
     },
     "Band": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith C1",
         "Lith L3",
@@ -4146,7 +3875,6 @@
   },
   "Euphona": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi B1",
         "Axi H5",
@@ -4161,7 +3889,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Axi E2",
         "Meso E5"
@@ -4169,7 +3896,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith M7",
         "Meso N3",
@@ -4181,7 +3907,6 @@
   },
   "Akjagara": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi B4",
         "Axi M3",
@@ -4196,7 +3921,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi L3",
         "Lith M6",
@@ -4209,7 +3933,6 @@
       "count": 2
     },
     "Link": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi R3",
         "Lith P3",
@@ -4222,7 +3945,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Lith A3",
         "Meso A1",
@@ -4235,7 +3957,6 @@
   },
   "Baruuk": {
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi B5",
         "Axi B6",
@@ -4247,7 +3968,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi B9",
         "Lith B10",
@@ -4258,7 +3978,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi P7",
         "Axi W3",
@@ -4272,7 +3991,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith N15",
         "Lith P8",
@@ -4288,7 +4006,6 @@
   },
   "Nagantaka": {
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B5",
         "Axi G13",
@@ -4302,7 +4019,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi K9",
         "Axi S10",
@@ -4316,7 +4032,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi N11",
         "Lith N14",
@@ -4328,7 +4043,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith D6",
         "Lith H6",
@@ -4341,7 +4055,6 @@
   },
   "Knell": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi B5",
         "Axi P4",
@@ -4355,7 +4068,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Axi K10",
         "Axi K11",
@@ -4368,7 +4080,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S15",
         "Lith G6",
@@ -4384,7 +4095,6 @@
   },
   "Garuda": {
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B6",
         "Axi G9",
@@ -4399,7 +4109,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi G10",
         "Axi G7",
@@ -4409,7 +4118,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi G12",
         "Axi G13",
@@ -4419,7 +4127,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi H6",
         "Lith C10",
@@ -4437,7 +4144,6 @@
   },
   "Gauss": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B7",
         "Axi Z2",
@@ -4452,7 +4158,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi G15",
         "Lith G12",
@@ -4465,7 +4170,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi P9",
         "Axi V12",
@@ -4478,7 +4182,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Lith C13",
         "Lith M9",
@@ -4494,7 +4197,6 @@
   },
   "Hystrix": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi B7",
         "Axi G10",
@@ -4505,7 +4207,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi G13",
         "Axi P6",
@@ -4519,7 +4220,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Lith H6",
         "Lith H8",
@@ -4533,7 +4233,6 @@
   },
   "Okina": {
     "Blade": {
-      "rarity": "Common",
       "relics": [
         "Axi B8",
         "Axi C10",
@@ -4546,7 +4245,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi O6",
         "Lith O4",
@@ -4556,7 +4254,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith Z4",
         "Meso A8",
@@ -4571,7 +4268,6 @@
   },
   "Vectis": {
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi C1",
         "Axi H1",
@@ -4583,7 +4279,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K12",
         "Axi V2",
@@ -4595,7 +4290,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith A1",
         "Meso C7",
@@ -4605,7 +4299,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Lith V10",
         "Meso V1",
@@ -4616,7 +4309,6 @@
   },
   "Caliban": {
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi C10",
         "Axi C11",
@@ -4626,7 +4318,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi P10",
         "Lith K12",
@@ -4637,7 +4328,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Lith C13",
         "Neo C7",
@@ -4646,7 +4336,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith V11",
         "Meso V11",
@@ -4659,7 +4348,6 @@
   },
   "Perigale": {
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi C11",
         "Neo A16",
@@ -4668,7 +4356,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Axi P10",
         "Neo P10"
@@ -4676,7 +4363,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith C14",
         "Lith T14"
@@ -4684,7 +4370,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Meso A12",
         "Meso L4"
@@ -4694,7 +4379,6 @@
   },
   "Silva & Aegis": {
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C2",
         "Axi S6",
@@ -4706,7 +4390,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi V7",
         "Lith B9",
@@ -4719,7 +4402,6 @@
       "count": 1
     },
     "Hilt": {
-      "rarity": "Common",
       "relics": [
         "Lith C3",
         "Lith M3",
@@ -4732,7 +4414,6 @@
       "count": 1
     },
     "Guard": {
-      "rarity": "Rare",
       "relics": [
         "Lith S9",
         "Neo S16",
@@ -4745,7 +4426,6 @@
   },
   "Corinth": {
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Axi C5",
         "Axi C6",
@@ -4756,7 +4436,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Rare",
       "relics": [
         "Axi C8",
         "Lith C6",
@@ -4766,7 +4445,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi P4",
         "Axi T7",
@@ -4779,7 +4457,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi T4",
         "Lith A4",
@@ -4795,7 +4472,6 @@
   },
   "Panthera": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi C5",
         "Axi I1",
@@ -4809,7 +4485,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi M2",
         "Axi S10",
@@ -4822,7 +4497,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Lith P3",
         "Lith P4",
@@ -4833,7 +4507,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Meso P2",
         "Meso P5",
@@ -4844,7 +4517,6 @@
   },
   "Tekko": {
     "Gauntlet": {
-      "rarity": "Common",
       "relics": [
         "Axi C5",
         "Axi G4",
@@ -4858,7 +4530,6 @@
       "count": 2
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi T6",
         "Axi T7",
@@ -4868,7 +4539,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith L2",
         "Lith P5",
@@ -4881,7 +4551,6 @@
   },
   "Pandero": {
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C6",
         "Axi N8",
@@ -4894,7 +4563,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi N9",
         "Axi P4",
@@ -4907,7 +4575,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Axi P5",
         "Meso P8",
@@ -4920,7 +4587,6 @@
   },
   "Tenora": {
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C7",
         "Axi G7",
@@ -4933,7 +4599,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi I2",
         "Axi K10",
@@ -4946,7 +4611,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Axi T8",
         "Meso T4",
@@ -4956,7 +4620,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Lith T5",
         "Lith T9",
@@ -4970,7 +4633,6 @@
   },
   "Magnus": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi C7",
         "Axi K10",
@@ -4986,7 +4648,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Axi M2",
         "Axi M5",
@@ -4996,7 +4657,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi M5",
         "Axi T8",
@@ -5012,7 +4672,6 @@
   },
   "Gara": {
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi C8",
         "Axi G7",
@@ -5026,7 +4685,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi G6",
         "Axi G9",
@@ -5037,7 +4695,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G8",
         "Axi I2",
@@ -5050,7 +4707,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S14",
         "Lith S12",
@@ -5064,7 +4720,6 @@
   },
   "Tatsu": {
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C9",
         "Lith G6",
@@ -5076,7 +4731,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi N10",
         "Axi P7",
@@ -5091,7 +4745,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Rare",
       "relics": [
         "Axi T10",
         "Lith T10",
@@ -5104,7 +4757,6 @@
   },
   "Phantasma": {
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi C9",
         "Axi P6",
@@ -5116,7 +4768,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi N10",
         "Axi N9",
@@ -5129,7 +4780,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Lith B10",
         "Lith T10",
@@ -5144,7 +4794,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Lith P8",
         "Meso P10",
@@ -5156,7 +4805,6 @@
   },
   "Destreza": {
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi D1",
         "Axi D2",
@@ -5168,7 +4816,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Axi D2",
         "Axi M4",
@@ -5183,7 +4830,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi D3",
         "Axi K4",
@@ -5199,7 +4845,6 @@
   },
   "Tiberon": {
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi D1",
         "Axi G5",
@@ -5211,7 +4856,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi L2",
         "Axi O2",
@@ -5224,7 +4868,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Rare",
       "relics": [
         "Lith T2",
         "Lith T6",
@@ -5234,7 +4877,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Meso T1",
         "Neo K3"
@@ -5244,7 +4886,6 @@
   },
   "Limbo": {
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi D3",
         "Axi T3",
@@ -5259,7 +4900,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi L2",
         "Axi M4",
@@ -5270,7 +4910,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Axi L3",
         "Axi L5",
@@ -5282,7 +4921,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso T3",
         "Meso Z1",
@@ -5296,7 +4934,6 @@
   },
   "Dakra": {
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi D4",
         "Axi S4",
@@ -5306,7 +4943,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi R1",
         "Lith M1",
@@ -5316,7 +4952,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Lith M2",
         "Lith M8",
@@ -5329,7 +4964,6 @@
   },
   "Boar": {
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi D4",
         "Axi V2",
@@ -5339,7 +4973,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi R1",
         "Axi S4",
@@ -5349,7 +4982,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Rare",
       "relics": [
         "Lith B1",
         "Meso B1",
@@ -5359,7 +4991,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso F4",
         "Neo B3",
@@ -5371,7 +5002,6 @@
   },
   "Mag": {
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi D4",
         "Axi V2",
@@ -5381,7 +5011,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi R1",
         "Axi S4",
@@ -5391,7 +5020,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith M1",
         "Lith M2",
@@ -5401,7 +5029,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso B1",
         "Meso B3",
@@ -5413,7 +5040,6 @@
   },
   "Latron": {
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi D4",
         "Axi E1",
@@ -5422,7 +5048,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi L1",
         "Lith G1",
@@ -5431,7 +5056,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi S2",
         "Neo B8",
@@ -5440,7 +5064,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Lith G2",
         "Meso F2",
@@ -5451,7 +5074,6 @@
   },
   "Frost": {
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi D4",
         "Axi E1",
@@ -5460,7 +5082,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Lith G1",
         "Meso E1",
@@ -5469,7 +5090,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith G2",
         "Lith M8",
@@ -5478,7 +5098,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Meso F2",
         "Meso F3",
@@ -5490,7 +5109,6 @@
   },
   "Dual Keres": {
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi D5",
         "Lith D6",
@@ -5502,7 +5120,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Common",
       "relics": [
         "Axi G8",
         "Axi G9",
@@ -5515,7 +5132,6 @@
       "count": 2
     },
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith T10",
         "Meso H8",
@@ -5528,7 +5144,6 @@
   },
   "Akarius": {
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi D5",
         "Axi H8",
@@ -5542,7 +5157,6 @@
       "count": 2
     },
     "Link": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi Y2",
         "Lith A11",
@@ -5555,7 +5169,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Lith A10",
         "Lith A6",
@@ -5566,7 +5179,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Meso A11",
         "Meso A7",
@@ -5577,7 +5189,6 @@
   },
   "Ember": {
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi E1",
         "Lith E1",
@@ -5588,7 +5199,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi R4",
         "Axi S2",
@@ -5598,7 +5208,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Meso B10",
         "Meso F2",
@@ -5608,7 +5217,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Meso F3",
         "Meso S14",
@@ -5620,7 +5228,6 @@
   },
   "Glaive": {
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi E1",
         "Axi L1",
@@ -5629,7 +5236,6 @@
       "count": 2
     },
     "Disc": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi R4",
         "Meso F3",
@@ -5638,7 +5244,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith G1",
         "Lith G2",
@@ -5649,7 +5254,6 @@
   },
   "Sicarus": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi E1",
         "Meso B10",
@@ -5658,7 +5262,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Axi S2",
         "Meso S14",
@@ -5667,7 +5270,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Meso F2",
         "Neo F1",
@@ -5678,7 +5280,6 @@
   },
   "Vauban": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi F1",
         "Lith F2",
@@ -5688,7 +5289,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Axi V1",
         "Lith V4",
@@ -5700,7 +5300,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Lith V2",
         "Lith V8",
@@ -5710,7 +5309,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Lith V7",
         "Meso N2",
@@ -5723,7 +5321,6 @@
   },
   "Fulmin": {
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Axi F2",
         "Axi F3",
@@ -5735,7 +5332,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi H7",
         "Axi S19",
@@ -5748,7 +5344,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi H8",
         "Lith A7",
@@ -5761,7 +5356,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi W4",
         "Axi Z2",
@@ -5777,7 +5371,6 @@
   },
   "Masseter": {
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Axi F2",
         "Lith A6",
@@ -5791,7 +5384,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G12",
         "Axi P6",
@@ -5805,7 +5397,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi M6",
         "Lith M10",
@@ -5819,7 +5410,6 @@
   },
   "Galatine": {
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi G1",
         "Meso G1",
@@ -5829,7 +5419,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K2",
         "Axi O1",
@@ -5843,7 +5432,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Common",
       "relics": [
         "Axi N4",
         "Axi O2",
@@ -5863,7 +5451,6 @@
   },
   "Kavasa Kubrow Collar": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G1",
         "Axi S7",
@@ -5876,7 +5463,6 @@
   },
   "Nekros": {
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi G1",
         "Axi N4",
@@ -5891,7 +5477,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi N3",
         "Lith H10",
@@ -5902,7 +5487,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi N5",
         "Lith K11",
@@ -5912,7 +5496,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Lith N2",
         "Meso N16",
@@ -5926,7 +5509,6 @@
   },
   "Saryn": {
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi G1",
         "Axi S5",
@@ -5943,7 +5525,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi N12",
         "Axi N6",
@@ -5956,7 +5537,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi V9",
         "Lith A1",
@@ -5969,7 +5549,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Lith S17",
         "Meso S2",
@@ -5982,7 +5561,6 @@
   },
   "Corvas": {
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi G10",
         "Axi K8",
@@ -5996,7 +5574,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi G8",
         "Lith K10",
@@ -6008,7 +5585,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K7",
         "Lith W3",
@@ -6020,7 +5596,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Meso C9",
         "Neo C2",
@@ -6032,7 +5607,6 @@
   },
   "Grendel": {
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi G11",
         "Axi G14",
@@ -6041,7 +5615,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi G15",
         "Axi M6",
@@ -6054,7 +5627,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith A11",
         "Lith C12",
@@ -6065,7 +5637,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith G8",
         "Meso G6",
@@ -6078,7 +5649,6 @@
   },
   "Khora": {
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G13",
         "Lith C10",
@@ -6090,7 +5660,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi K8",
         "Neo K5",
@@ -6100,7 +5669,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi N11",
         "Lith H7",
@@ -6115,7 +5683,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith K9",
         "Meso K4",
@@ -6127,7 +5694,6 @@
   },
   "Zylok": {
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G14",
         "Axi G15",
@@ -6140,7 +5706,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Axi H8",
         "Axi L6",
@@ -6155,7 +5720,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi Z2",
         "Lith Z4",
@@ -6168,7 +5732,6 @@
   },
   "Quassus": {
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Axi G14",
         "Axi N13",
@@ -6181,7 +5744,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith N18",
         "Lith T14",
@@ -6194,7 +5756,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Lith Q1",
         "Lith Q2",
@@ -6206,7 +5767,6 @@
   },
   "Sevagoth": {
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi G14",
         "Axi Y1",
@@ -6220,7 +5780,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Axi S17",
         "Axi S18",
@@ -6230,7 +5789,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi Y3",
         "Axi Z2",
@@ -6242,7 +5800,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Lith A7",
         "Lith C12",
@@ -6257,7 +5814,6 @@
   },
   "Redeemer": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G2",
         "Axi M4",
@@ -6271,7 +5827,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Rare",
       "relics": [
         "Axi R2",
         "Axi R3",
@@ -6283,7 +5838,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Common",
       "relics": [
         "Lith D5",
         "Lith L2",
@@ -6301,7 +5855,6 @@
   },
   "Kronen": {
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G3",
         "Axi L5",
@@ -6315,7 +5868,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi H3",
         "Axi L3",
@@ -6329,7 +5881,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi K2",
         "Axi K3",
@@ -6344,7 +5895,6 @@
   },
   "Ninkondi": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi G3",
         "Axi T9",
@@ -6358,7 +5908,6 @@
       "count": 1
     },
     "Chain": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi P1",
         "Lith D1",
@@ -6371,7 +5920,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Rare",
       "relics": [
         "Lith N13",
         "Lith N4",
@@ -6386,7 +5934,6 @@
   },
   "Nezha": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G6",
         "Axi M2",
@@ -6400,7 +5947,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Axi N7",
         "Lith N11",
@@ -6411,7 +5957,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi N8",
         "Lith N10",
@@ -6424,7 +5969,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi O5",
         "Axi S12",
@@ -6441,7 +5985,6 @@
   },
   "Astilla": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi G7",
         "Axi N9",
@@ -6454,7 +5997,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi N7",
         "Lith B10",
@@ -6468,7 +6010,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi V11",
         "Lith K9",
@@ -6481,7 +6022,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Lith A4",
         "Meso A3",
@@ -6493,7 +6033,6 @@
   },
   "Mesa": {
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi H4",
         "Axi M1",
@@ -6509,7 +6048,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi M3",
         "Axi M4",
@@ -6521,7 +6059,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith C6",
         "Lith D1",
@@ -6536,7 +6073,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith D5",
         "Lith M6",
@@ -6550,7 +6086,6 @@
   },
   "Dethcube": {
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi I1",
         "Axi P2",
@@ -6564,7 +6099,6 @@
       "count": 1
     },
     "Carapace": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi N7",
         "Lith M6",
@@ -6578,7 +6112,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith D1",
         "Lith D3",
@@ -6589,7 +6122,6 @@
       "count": 1
     },
     "Cerebrum": {
-      "rarity": "Rare",
       "relics": [
         "Lith D2",
         "Meso D4",
@@ -6602,7 +6134,6 @@
   },
   "Strun": {
     "Receiver": {
-      "rarity": "Common",
       "relics": [
         "Axi I2",
         "Axi T8",
@@ -6617,7 +6148,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K10",
         "Lith G5",
@@ -6631,7 +6161,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi N12",
         "Axi N8",
@@ -6645,7 +6174,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith S11",
         "Lith S12",
@@ -6658,7 +6186,6 @@
   },
   "Odonata Harness": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi K1",
         "Axi T1",
@@ -6672,7 +6199,6 @@
   },
   "Hikou": {
     "Pouch": {
-      "rarity": "Common",
       "relics": [
         "Axi K1",
         "Axi V2",
@@ -6682,7 +6208,6 @@
       "count": 1
     },
     "Stars": {
-      "rarity": "Common",
       "relics": [
         "Axi S3",
         "Axi V10",
@@ -6692,7 +6217,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi S8",
         "Lith S1",
@@ -6704,7 +6228,6 @@
   },
   "Octavia": {
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Axi K6",
         "Axi P5",
@@ -6717,7 +6240,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi K8",
         "Axi S11",
@@ -6730,7 +6252,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi N7",
         "Lith C9",
@@ -6744,7 +6265,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi O5",
         "Lith O3",
@@ -6755,7 +6275,6 @@
   },
   "Loki": {
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi L1",
         "Axi L4"
@@ -6763,7 +6282,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi S2",
         "Meso F3",
@@ -6772,7 +6290,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith G2",
         "Lith O2"
@@ -6780,7 +6297,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Meso O3",
         "Neo E1"
@@ -6790,7 +6306,6 @@
   },
   "Reaper": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi L1",
         "Lith L4",
@@ -6799,7 +6314,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Lith G1",
         "Meso F3",
@@ -6808,7 +6322,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith M8",
         "Meso F2",
@@ -6819,7 +6332,6 @@
   },
   "Wyrm": {
     "Carapace": {
-      "rarity": "Common",
       "relics": [
         "Axi L1",
         "Axi L4"
@@ -6827,7 +6339,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi S2",
         "Neo E1",
@@ -6836,7 +6347,6 @@
       "count": 1
     },
     "Cerebrum": {
-      "rarity": "Common",
       "relics": [
         "Lith G2",
         "Lith O2"
@@ -6844,7 +6354,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso E1",
         "Meso O3"
@@ -6854,7 +6363,6 @@
   },
   "Nami Skyla": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi L2",
         "Axi L3",
@@ -6866,7 +6374,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi N5",
         "Lith N9",
@@ -6876,7 +6383,6 @@
       "count": 2
     },
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith C2",
         "Lith H1",
@@ -6889,7 +6395,6 @@
   },
   "Volt": {
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi L4",
         "Lith V1",
@@ -6899,7 +6404,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi N3",
         "Lith O2",
@@ -6910,7 +6414,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi V1",
         "Axi V8",
@@ -6920,7 +6423,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi V8",
         "Meso O3",
@@ -6933,7 +6435,6 @@
   },
   "Odonata": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi L4",
         "Axi V8",
@@ -6944,7 +6445,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi V1",
         "Axi V8",
@@ -6957,7 +6457,6 @@
   },
   "Bo": {
     "Ornament": {
-      "rarity": "Common",
       "relics": [
         "Axi L4",
         "Meso E1"
@@ -6965,7 +6464,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Lith G2",
         "Lith O2"
@@ -6973,7 +6471,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Neo F1",
         "Neo V8"
@@ -6983,7 +6480,6 @@
   },
   "Titania": {
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Axi M2",
         "Axi S9",
@@ -6997,7 +6493,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi T5",
         "Lith T11",
@@ -7009,7 +6504,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi V11",
         "Lith H3",
@@ -7021,7 +6515,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith G4",
         "Lith N10",
@@ -7037,28 +6530,24 @@
   },
   "Akmagnus": {
     "Link": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi M5"
       ],
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi M5"
       ],
       "count": 1
     },
     "Magnus Prime": {
-      "rarity": "Rare",
       "relics": [],
       "count": 2
     }
   },
   "Odonata Wings": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi N1",
         "Lith O2",
@@ -7070,7 +6559,6 @@
   },
   "Nautilus": {
     "Cerebrum": {
-      "rarity": "Rare",
       "relics": [
         "Axi N13",
         "Lith N15",
@@ -7080,7 +6568,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S16",
         "Lith Q1",
@@ -7092,7 +6579,6 @@
       "count": 1
     },
     "Carapace": {
-      "rarity": "Common",
       "relics": [
         "Axi V13",
         "Lith A7",
@@ -7105,7 +6591,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith N17",
         "Lith N18",
@@ -7117,7 +6602,6 @@
   },
   "Protea": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi N13",
         "Axi V13",
@@ -7132,7 +6616,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Axi P7",
         "Axi P8",
@@ -7143,7 +6626,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi P9",
         "Lith P9",
@@ -7155,7 +6637,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S16",
         "Axi T12",
@@ -7171,7 +6652,6 @@
   },
   "Venka": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi O3",
         "Axi S8",
@@ -7182,7 +6662,6 @@
       "count": 1
     },
     "Blades": {
-      "rarity": "Common",
       "relics": [
         "Axi S5",
         "Axi V5",
@@ -7197,7 +6676,6 @@
       "count": 2
     },
     "Gauntlet": {
-      "rarity": "Rare",
       "relics": [
         "Axi V10",
         "Axi V7",
@@ -7210,21 +6688,18 @@
   },
   "Athodai": {
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi P10"
       ],
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Meso L5"
       ],
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Neo A16"
       ],
@@ -7233,7 +6708,6 @@
   },
   "Gunsen": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi P9",
         "Lith C11",
@@ -7247,7 +6721,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S19",
         "Axi T12",
@@ -7260,7 +6733,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Lith G10",
         "Lith G13",
@@ -7272,7 +6744,6 @@
   },
   "Trumna": {
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi P9",
         "Lith K12",
@@ -7286,7 +6757,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Rare",
       "relics": [
         "Axi T12",
         "Neo T10",
@@ -7296,7 +6766,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Rare",
       "relics": [
         "Axi T13",
         "Lith T14",
@@ -7306,7 +6775,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith N16",
         "Lith Y1",
@@ -7320,7 +6788,6 @@
   },
   "Rhino": {
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi R1",
         "Axi R4",
@@ -7329,7 +6796,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi S3",
         "Neo B3",
@@ -7338,7 +6804,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith B1",
         "Lith B4",
@@ -7347,7 +6812,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith E1",
         "Meso M1",
@@ -7358,7 +6822,6 @@
   },
   "Ankyros": {
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi R1",
         "Axi S3",
@@ -7367,7 +6830,6 @@
       "count": 2
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Lith B1",
         "Lith B4",
@@ -7376,7 +6838,6 @@
       "count": 1
     },
     "Gauntlet": {
-      "rarity": "Common",
       "relics": [
         "Meso M1",
         "Meso S14",
@@ -7387,7 +6848,6 @@
   },
   "Boltor": {
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Axi R1",
         "Axi R4",
@@ -7396,7 +6856,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith B1",
         "Neo G6",
@@ -7405,7 +6864,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Lith B4",
         "Meso B10",
@@ -7414,7 +6872,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Lith E1",
         "Meso M1",
@@ -7425,7 +6882,6 @@
   },
   "Scindo": {
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi S1",
         "Axi S3",
@@ -7434,7 +6890,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith B4",
         "Lith C7",
@@ -7443,7 +6898,6 @@
       "count": 1
     },
     "Handle": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso C1",
         "Meso N11",
@@ -7454,7 +6908,6 @@
   },
   "Guandao": {
     "Blade": {
-      "rarity": "Common",
       "relics": [
         "Axi S10",
         "Axi S9",
@@ -7468,7 +6921,6 @@
       "count": 2
     },
     "Handle": {
-      "rarity": "Rare",
       "relics": [
         "Lith G3",
         "Lith G4",
@@ -7479,7 +6931,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith K9",
         "Lith P5",
@@ -7494,14 +6945,12 @@
   },
   "Sarofang": {
     "Blade": {
-      "rarity": "Rare",
       "relics": [
         "Axi S20"
       ],
       "count": 1
     },
     "Handle": {
-      "rarity": "Common",
       "relics": [
         "Meso A12",
         "Neo S20"
@@ -7509,7 +6958,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso E7",
         "Neo A16"
@@ -7519,7 +6967,6 @@
   },
   "Nyx": {
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S3",
         "Lith C7",
@@ -7528,7 +6975,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S8",
         "Neo N1",
@@ -7537,7 +6983,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Lith B4",
         "Lith S2",
@@ -7547,7 +6992,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Meso N1",
         "Meso N11",
@@ -7558,7 +7002,6 @@
   },
   "Soma": {
     "Stock": {
-      "rarity": "Rare",
       "relics": [
         "Axi S4",
         "Axi S7",
@@ -7568,7 +7011,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith K4",
         "Lith S3",
@@ -7578,7 +7020,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith M1",
         "Meso B3",
@@ -7588,7 +7029,6 @@
       "count": 1
     },
     "Barrel": {
-      "rarity": "Common",
       "relics": [
         "Lith M2",
         "Meso D5",
@@ -7599,7 +7039,6 @@
   },
   "Nova": {
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S4",
         "Meso D5",
@@ -7608,7 +7047,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Axi S7",
         "Lith C1",
@@ -7619,7 +7057,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Common",
       "relics": [
         "Lith C1",
         "Lith K4",
@@ -7629,7 +7066,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Lith N1",
         "Neo N12",
@@ -7641,7 +7077,6 @@
   },
   "Spira": {
     "Pouch": {
-      "rarity": "Rare",
       "relics": [
         "Axi S5",
         "Lith S1",
@@ -7655,7 +7090,6 @@
       "count": 1
     },
     "Blade": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi V9",
         "Lith S5",
@@ -7667,7 +7101,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Lith C5",
         "Lith N2",
@@ -7684,7 +7117,6 @@
   },
   "Tigris": {
     "Barrel": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi S6",
         "Lith K1",
@@ -7697,7 +7129,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Rare",
       "relics": [
         "Axi T1",
         "Axi T11",
@@ -7708,7 +7139,6 @@
       "count": 1
     },
     "Receiver": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi V5",
         "Lith S9",
@@ -7723,7 +7153,6 @@
       "count": 1
     },
     "Stock": {
-      "rarity": "Common",
       "relics": [
         "Lith B2",
         "Lith K11",
@@ -7737,21 +7166,18 @@
   },
   "Gyre": {
     "Chassis": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi T13"
       ],
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Lith G14"
       ],
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith Q3",
         "Neo T10"
@@ -7759,7 +7185,6 @@
       "count": 1
     },
     "Systems": {
-      "rarity": "Common",
       "relics": [
         "Meso E7",
         "Meso V14",
@@ -7770,7 +7195,6 @@
   },
   "Valkyr": {
     "Systems": {
-      "rarity": "Uncommon",
       "relics": [
         "Axi V10",
         "Axi V9",
@@ -7781,7 +7205,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Rare",
       "relics": [
         "Axi V5",
         "Axi V6",
@@ -7792,7 +7215,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Common",
       "relics": [
         "Axi V7",
         "Axi V9",
@@ -7808,7 +7230,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Uncommon",
       "relics": [
         "Lith C5",
         "Lith S6",
@@ -7825,7 +7246,6 @@
   },
   "Yareli": {
     "Systems": {
-      "rarity": "Rare",
       "relics": [
         "Axi Y1",
         "Neo Y1"
@@ -7833,7 +7253,6 @@
       "count": 1
     },
     "Neuroptics": {
-      "rarity": "Rare",
       "relics": [
         "Axi Y2",
         "Axi Y3",
@@ -7844,7 +7263,6 @@
       "count": 1
     },
     "Chassis": {
-      "rarity": "Common",
       "relics": [
         "Lith A10",
         "Lith Z4",
@@ -7856,7 +7274,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso D8",
         "Meso P17",
@@ -7868,7 +7285,6 @@
   },
   "Kestrel": {
     "Blade": {
-      "rarity": "Common",
       "relics": [
         "Lith C14",
         "Lith D7",
@@ -7877,7 +7293,6 @@
       "count": 2
     },
     "Grip": {
-      "rarity": "Rare",
       "relics": [
         "Meso K8",
         "Neo K9"
@@ -7885,7 +7300,6 @@
       "count": 1
     },
     "Blueprint": {
-      "rarity": "Uncommon",
       "relics": [
         "Meso P17",
         "Neo N24",

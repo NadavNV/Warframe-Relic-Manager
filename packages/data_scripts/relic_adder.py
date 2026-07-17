@@ -74,7 +74,7 @@ def create_pull_request(patch_num):
     return repo.create_pull(title=f"Patch {patch_num} Update", body="", head=branch_name, base="main").html_url
 
 
-def add_items(rarity, rewards, relic_name, pending_items):
+def add_items(rewards, relic_name, pending_items):
     for reward in rewards:
         item, part = reward['Item'], reward['Part']
         # Safety check
@@ -85,9 +85,7 @@ def add_items(rarity, rewards, relic_name, pending_items):
             pending_items[item] = {}
 
         if part not in pending_items[item]:
-            # This creates the specific footprint you need
             pending_items[item][part] = {
-                "rarity": rarity,
                 "count": 1,
                 "relics": [relic_name]
             }
@@ -143,7 +141,7 @@ def main():
 
         col_a, col_b, col_c = st.columns(3)
         with col_a:
-            era = st.selectbox("Era", ["Axi", "Lith", "Meso", "Neo"])
+            era = st.selectbox("Era", ["Axi", "Lith", "Meso", "Neo", "Vanguard"])
         with col_b:
             letter = st.text_input("Letter", key=f"relic_letter_{st.session_state.form_key}")
         with col_c:
@@ -185,9 +183,8 @@ def main():
                     "Uncommon": [u for u in uncommon_rewards if u['Item']],
                     "Rare": [{"Item": rare_i, "Part": rare_p}]
                 })
-                add_items('Common', common_rewards, relic_name, st.session_state.pending_items)
-                add_items('Uncommon', uncommon_rewards, relic_name, st.session_state.pending_items)
-                add_items('Rare', [{"Item": rare_i, "Part": rare_p}], relic_name, st.session_state.pending_items)
+                add_items(common_rewards + uncommon_rewards + [{"Item": rare_i, "Part": rare_p}], relic_name,
+                          st.session_state.pending_items)
 
                 # --- CLEAR FORM (Simplified) ---
                 # Because you appended form_key to the widget keys,
