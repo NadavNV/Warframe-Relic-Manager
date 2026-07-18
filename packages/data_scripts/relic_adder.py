@@ -186,9 +186,6 @@ def main():
                 add_items(common_rewards + uncommon_rewards + [{"Item": rare_i, "Part": rare_p}], relic_name,
                           st.session_state.pending_items)
 
-                # --- CLEAR FORM (Simplified) ---
-                # Because you appended form_key to the widget keys,
-                # you just increment it to force Streamlit to draw brand new empty widgets!
                 st.session_state.form_key += 1
                 st.rerun()
             else:
@@ -200,6 +197,93 @@ def main():
     if st.session_state.pending_items:
         with st.expander("View Pending Items JSON"):
             st.json(st.session_state.pending_items)
+
+    st.header("Pending Items")
+
+    if st.session_state.pending_items:
+        for idx_start in range(0, len(st.session_state.pending_items.keys()), MAX_COLS):
+            item_keys = list(st.session_state.pending_items.keys())[idx_start: idx_start + MAX_COLS]
+            row_items = [{key: st.session_state.pending_items[key]} for key in item_keys]
+
+            # --- Centering Math ---
+            empty_slots = MAX_COLS - len(row_items)
+            left_spacer = empty_slots / 2
+            right_spacer = empty_slots / 2
+
+            weights = []
+            if left_spacer > 0:
+                weights.append(left_spacer)
+            weights.extend([1] * len(row_items))  # Give each item card a weight of 1
+            if right_spacer > 0:
+                weights.append(right_spacer)
+
+            cols = st.columns(weights)
+            col_offset = 1 if left_spacer > 0 else 0
+
+            # Draw each item card in its column
+            for local_idx, item in enumerate(row_items):
+
+                with cols[col_offset + local_idx]:
+                    # Using a container with a border makes side-by-side UI much cleaner
+                    with st.container(border=True):
+                        item_name = list(item.keys())[0]
+                        st.subheader(f"{item_name}")
+
+                        parts_dict = st.session_state.pending_items[item_name]
+
+                        # 1. Build list of dicts for the data editor
+                        table_data = []
+                        for part_name, part_data in parts_dict.items():
+                            table_data.append({
+                                "Component": part_name,
+                                "Count": part_data.get("count", 1)
+                            })
+
+                        # 2. Display an editable table so users can set counts
+                        # Using item_name for the key prevents data loss if items shift order
+                        edited_data = st.data_editor(
+                            table_data,
+                            column_config={
+                                "Component": st.column_config.TextColumn("Component", disabled=True),
+                                "Count": st.column_config.NumberColumn("Count", min_value=1, step=1, required=True),
+                            },
+                            hide_index=True,
+                            key=f"editor_{item_name}",
+                            width="stretch"
+                        )
+
+                        # 3. Sync any count updates back to session_state
+                        needs_rerun = False
+                        for row in edited_data:
+                            if isinstance(row, dict):
+                                p_name = row["Component"]
+                                p_count = row["Count"]
+                                if p_name in parts_dict and parts_dict[p_name].get("count", 1) != p_count:
+                                    st.session_state.pending_items[item_name][p_name]["count"] = p_count
+                                    needs_rerun = True
+
+                        # Force a rerun to sync the widget state with the newly updated dictionary
+                        if needs_rerun:
+                            st.rerun()
+
+                        # 4. Form to manually add special requirements
+                        with st.expander("➕ Add Component"):
+                            c1, c2 = st.columns([3, 1.5])
+                            with c1:
+                                special_comp = st.text_input("Component Name", placeholder="e.g., Lex Prime",
+                                                             key=f"sp_name_{item_name}", label_visibility="collapsed")
+                            with c2:
+                                special_count = st.number_input("Count", min_value=1, value=1, step=1,
+                                                                key=f"sp_count_{item_name}",
+                                                                label_visibility="collapsed")
+
+                            if st.button("Add Component", key=f"sp_add_{item_name}", width="stretch"):
+                                if special_comp and special_comp not in parts_dict:
+                                    st.session_state.pending_items[item_name][special_comp] = {
+                                        "count": special_count,
+                                        "relics": ["Required Item"]
+                                    }
+                                    st.rerun()
 
     st.header("Pending Relics")
 
@@ -250,8 +334,8 @@ def main():
                             st.markdown(f'<span style="color:#FFD700">★ {item["Item"]} {item["Part"]}</span>',
                                         unsafe_allow_html=True)
 
-                        # Set use_container_width=True so the button fits the card nicely
-                        if st.button(f"Remove {relic['Name']}", key=f"del_{global_idx}", use_container_width=True):
+                        # Set width='stretch' so the button fits the card nicely
+                        if st.button(f"Remove {relic['Name']}", key=f"del_{global_idx}", width='stretch'):
                             remove_relic(global_idx, st.session_state.pending_relics, st.session_state.pending_items)
                             st.rerun()
 
@@ -269,6 +353,7 @@ def main():
                 pr_url = create_pull_request(patch_num)
                 st.success(f"Success! [View PR]({pr_url})")
                 st.session_state.pending_relics = []
+                st.session_state.pending_items = {}
 
 
 if __name__ == "__main__":
