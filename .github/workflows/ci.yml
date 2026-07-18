@@ -10,6 +10,10 @@ jobs:
   # Job 1: Frontend React application
   frontend-tests:
     runs-on: ubuntu-latest
+    # This sets the working directory for all 'run' steps in this job
+    defaults:
+      run:
+        working-directory: packages/frontend
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
