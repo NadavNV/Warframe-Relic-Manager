@@ -27,7 +27,7 @@ A web-based tool designed to help Warframe players manage their relic farming. B
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/NadavNV/Warframe-Relic-Manager.git](https://github.com/NadavNV/Warframe-Relic-Manager.git)
+    git clone https://github.com/NadavNV/Warframe-Relic-Manager.git
     cd Warframe-Relic-Manager
     ```
 
