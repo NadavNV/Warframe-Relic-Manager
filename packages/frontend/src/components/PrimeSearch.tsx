@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect, type ChangeEvent } from "react";
-import itemDataRaw from "../../../../data/master_items.json";
+import { validatedItemData } from "../utils/dataValidation";
 
 // Extract the top-level keys (the prime items) from the JSON[cite: 1]
-const primeItems: string[] = Object.keys(itemDataRaw);
+const primeItems: string[] = Object.keys(validatedItemData);
 
 interface PrimeSearchProps {
   onAddItem: (itemName: string) => void;
@@ -102,6 +102,11 @@ export default function PrimeSearch({ onAddItem }: PrimeSearchProps) {
             type="text"
             value={inputValue}
             onChange={handleChange}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleAddItem();
+              }
+            }}
             onFocus={() => {
               if (suggestions.length > 0) setShowSuggestions(true);
             }}

@@ -3,6 +3,7 @@ import DynamicRelicTables from "./components/DynamicRelicTables";
 import type DesiredItem from "./types/DesiredItem";
 import PrimeSearch from "./components/PrimeSearch";
 import RelicInventoryManager from "./components/RelicInventoryManager";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [desiredItems, setDesiredItems] = useState<DesiredItem[]>(() => {
@@ -146,6 +147,7 @@ export default function App() {
         desiredItems={desiredItems}
         completedCells={completedCells}
       />
+      <Footer />
     </div>
   );
 }

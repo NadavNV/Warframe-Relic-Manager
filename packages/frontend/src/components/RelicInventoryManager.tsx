@@ -1,12 +1,10 @@
 import { useState, type ChangeEvent } from "react";
-import itemDataRaw from "../../../../data/master_items.json";
-import relicDataRaw from "../../../../data/relic_drops.json";
+import { validatedItemData } from "../utils/dataValidation";
+import { validatedRelicData } from "../utils/dataValidation";
 import type DesiredItem from "../types/DesiredItem";
-import type ItemSchema from "../types/ItemSchema";
-import type RelicSchema from "../types/RelicSchema";
 
-const itemData = itemDataRaw as Record<string, ItemSchema>;
-const relicData = relicDataRaw as Record<string, RelicSchema>;
+const itemData = validatedItemData;
+const relicData = validatedRelicData;
 
 interface RelicInventoryProps {
   relicInventory: Record<string, number>;
