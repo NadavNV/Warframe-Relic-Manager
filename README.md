@@ -69,7 +69,7 @@ A web-based tool designed to help Warframe players manage their relic farming. B
 
 ## Usage
 
-1.  Open the application in your browser.
+1.  Visit the [live app](https://warframe-relic-manager.netlify.app/) or open your local environment in your browser.
 2.  Enter the name of the desired Prime item in the search bar.
 3.  Use the resulting list to plan your void fissure runs efficiently.
 
