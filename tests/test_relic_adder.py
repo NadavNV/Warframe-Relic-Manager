@@ -16,37 +16,35 @@ class TestRelicAdder(unittest.TestCase):
         """Verifies that a brand new item-part hierarchy is cleanly created."""
         rewards = [{"Item": "Volt Prime", "Part": "Chassis"}]
 
-        add_items("Common", rewards, "Lith L1", self.empty_pending_items)
+        add_items(rewards, "Lith L1", self.empty_pending_items)
 
         self.assertIn("Volt Prime", self.empty_pending_items)
         self.assertIn("Chassis", self.empty_pending_items["Volt Prime"])
 
         part_data = self.empty_pending_items["Volt Prime"]["Chassis"]
-        self.assertEqual(part_data["rarity"], "Common")
         self.assertEqual(part_data["count"], 1)
         self.assertEqual(part_data["relics"], ["Lith L1"])
 
     def test_add_items_appends_to_existing_item_different_part(self):
         """Verifies that adding a new part to an existing item does not overwrite existing parts."""
         self.empty_pending_items["Volt Prime"] = {
-            "Chassis": {"rarity": "Common", "count": 1, "relics": ["Lith L1"]}
+            "Chassis": {"count": 1, "relics": ["Lith L1"]}
         }
 
         rewards = [{"Item": "Volt Prime", "Part": "Systems"}]
-        add_items("Uncommon", rewards, "Lith L2", self.empty_pending_items)
+        add_items(rewards, "Lith L2", self.empty_pending_items)
 
         self.assertIn("Chassis", self.empty_pending_items["Volt Prime"])
         self.assertIn("Systems", self.empty_pending_items["Volt Prime"])
-        self.assertEqual(self.empty_pending_items["Volt Prime"]["Systems"]["rarity"], "Uncommon")
 
     def test_add_items_appends_new_relic_to_existing_part(self):
         """Verifies that adding the same item part from a different relic grows the relics list."""
         self.empty_pending_items["Volt Prime"] = {
-            "Chassis": {"rarity": "Common", "count": 1, "relics": ["Lith L1"]}
+            "Chassis": {"count": 1, "relics": ["Lith L1"]}
         }
 
         rewards = [{"Item": "Volt Prime", "Part": "Chassis"}]
-        add_items("Common", rewards, "Lith L2", self.empty_pending_items)
+        add_items(rewards, "Lith L2", self.empty_pending_items)
 
         relics_list = self.empty_pending_items["Volt Prime"]["Chassis"]["relics"]
         self.assertEqual(len(relics_list), 2)
@@ -56,11 +54,11 @@ class TestRelicAdder(unittest.TestCase):
     def test_add_items_ignores_duplicates(self):
         """Verifies that the same relic isn't appended to the same part multiple times."""
         self.empty_pending_items["Volt Prime"] = {
-            "Chassis": {"rarity": "Common", "count": 1, "relics": ["Lith L1"]}
+            "Chassis": {"count": 1, "relics": ["Lith L1"]}
         }
 
         rewards = [{"Item": "Volt Prime", "Part": "Chassis"}]
-        add_items("Common", rewards, "Lith L1", self.empty_pending_items)
+        add_items(rewards, "Lith L1", self.empty_pending_items)
 
         relics_list = self.empty_pending_items["Volt Prime"]["Chassis"]["relics"]
         self.assertEqual(len(relics_list), 1)
@@ -77,11 +75,11 @@ class TestRelicAdder(unittest.TestCase):
 
         pending_items = {
             "Volt Prime": {
-                "Chassis": {"rarity": "Common", "count": 1, "relics": ["Lith L1"]},
-                "Systems": {"rarity": "Uncommon", "count": 1, "relics": ["Lith L1", "Lith L2"]}
+                "Chassis": {"count": 1, "relics": ["Lith L1"]},
+                "Systems": {"count": 1, "relics": ["Lith L1", "Lith L2"]}
             },
             "Lex Prime": {
-                "Receiver": {"rarity": "Rare", "count": 1, "relics": ["Lith L1"]}
+                "Receiver": {"count": 1, "relics": ["Lith L1"]}
             }
         }
 
@@ -111,7 +109,7 @@ class TestRelicAdder(unittest.TestCase):
 
         mock_master_data = json.dumps({
             "Volt Prime": {
-                "Chassis": {"rarity": "Common", "count": 1, "relics": []}
+                "Chassis": {"count": 1, "relics": []}
             }
         })
         mock_relic_drops = json.dumps({})
