@@ -1,12 +1,16 @@
+import github.Auth
 import streamlit as st
 import json
 import uuid
 from github import Github
+import keyring
 
 # --- Configuration ---
 LOCAL_ITEMS_PATH = "../../data/master_items.json"
 LOCAL_RELICS_PATH = "../../data/relic_drops.json"
 REPO_NAME = "NadavNV/Warframe-Relic-Manager"
+SECRET_NAME = "warframe-relic-adder"
+GITHUB_USERNAME = "NadavNV"
 # Max relics per row
 MAX_COLS = 9
 
@@ -50,7 +54,12 @@ def update_local_files(relic_list, new_items):
 
 def create_pull_request(patch_num):
     """Pushes local changes to a new GitHub branch and opens a PR."""
-    g = Github(st.secrets["github_token"])
+    token = keyring.get_password(SECRET_NAME, GITHUB_USERNAME)
+
+    if not token:
+        raise ValueError(f"No token found in keyring for service '{SECRET_NAME}'!")
+
+    g = Github(auth=github.Auth.Token(token))
     repo = g.get_repo(REPO_NAME)
     branch_name = f"patch-{patch_num}-{uuid.uuid4().hex[:6]}"
 
@@ -349,11 +358,24 @@ def main():
                 # Throw a loud error if they forgot the patch number
                 st.error("⚠️ Please enter a Patch Number at the top of the app before submitting!")
             else:
-                update_local_files(st.session_state.pending_relics, st.session_state.pending_items)
-                pr_url = create_pull_request(patch_num)
-                st.success(f"Success! [View PR]({pr_url})")
-                st.session_state.pending_relics = []
-                st.session_state.pending_items = {}
+                try:
+                    update_local_files(st.session_state.pending_relics, st.session_state.pending_items)
+                    pr_url = create_pull_request(patch_num)
+                    st.success(f"Success! [View PR]({pr_url})")
+                    st.session_state.pending_relics = []
+                    st.session_state.pending_items = {}
+                except ValueError as e:
+                    st.error(e)
+                except github.GithubException as e:
+                    if e.status == 401:
+                        st.error("Authentication failed! Check if your GitHub token in the keyring is still valid.")
+                    elif e.status == 422:
+                        st.error(
+                            "GitHub returned 422: Likely a branch with this name already exists or the PR is invalid.")
+                    else:
+                        st.error(f"GitHub API Error ({e.status}): {e.data.get('message', 'Unknown error')}")
+                except Exception as e:
+                    st.error(f"An unexpected error occurred: {e}")
 
 
 if __name__ == "__main__":
