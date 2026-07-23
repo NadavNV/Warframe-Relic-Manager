@@ -23,6 +23,11 @@ export default function App() {
     },
   );
 
+  const [pinnedRelics, setPinnedRelics] = useState<Set<string>>(() => {
+    const saved = localStorage.getItem("warframe_pinnedRelics");
+    return saved ? new Set(JSON.parse(saved)) : new Set();
+  });
+
   useEffect(() => {
     localStorage.setItem("warframe_desiredItems", JSON.stringify(desiredItems));
   }, [desiredItems]);
@@ -40,6 +45,13 @@ export default function App() {
       JSON.stringify(relicInventory),
     );
   }, [relicInventory]);
+
+  useEffect(() => {
+    localStorage.setItem(
+      "warframe_pinnedRelics",
+      JSON.stringify(Array.from(pinnedRelics)),
+    );
+  }, [pinnedRelics]);
 
   // --- EVENT HANDLERS ---
 
@@ -103,6 +115,15 @@ export default function App() {
     }
   };
 
+  const handleTogglePin = (relic: string) => {
+    setPinnedRelics((prev) => {
+      const next = new Set(prev);
+      if (next.has(relic)) next.delete(relic);
+      else next.add(relic);
+      return next;
+    });
+  };
+
   return (
     <div className="min-h-screen bg-void-dark p-8 relative">
       <div className="flex flex-col items-center justify-center relative mb-8">
@@ -146,6 +167,8 @@ export default function App() {
         onUpdateRelicCount={handleUpdateRelicCount}
         desiredItems={desiredItems}
         completedCells={completedCells}
+        pinnedRelics={pinnedRelics}
+        onTogglePin={handleTogglePin}
       />
       <Footer />
     </div>

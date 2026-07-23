@@ -1,4 +1,3 @@
-// src/App.test.tsx
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, it, expect, beforeEach, vi } from "vitest";
@@ -16,7 +15,13 @@ vi.mock("./components/DynamicRelicTables", () => ({
 }));
 
 vi.mock("./components/RelicInventoryManager", () => ({
-  default: () => <div data-testid="relic-manager" />,
+  default: ({ onTogglePin }: { onTogglePin: (relic: string) => void }) => (
+    <div data-testid="relic-manager">
+      <button onClick={() => onTogglePin("Mocked Relic")}>
+        Mock Toggle Pin
+      </button>
+    </div>
+  ),
 }));
 
 describe("App Integration", () => {
@@ -80,5 +85,27 @@ describe("App Integration", () => {
       localStorage.getItem("warframe_desiredItems") || "[]",
     );
     expect(saved).toHaveLength(0);
+  });
+
+  it("loads pinnedRelics from localStorage and updates when toggled", async () => {
+    // Setup initial local storage
+    localStorage.setItem(
+      "warframe_pinnedRelics",
+      JSON.stringify(["Existing Pinned Relic"]),
+    );
+
+    const user = userEvent.setup();
+    render(<App />);
+
+    const pinButton = screen.getByText("Mock Toggle Pin");
+    await user.click(pinButton);
+
+    // Check localStorage to see if the new relic was added and the old one was kept
+    const saved = JSON.parse(
+      localStorage.getItem("warframe_pinnedRelics") || "[]",
+    );
+    expect(saved).toContain("Existing Pinned Relic");
+    expect(saved).toContain("Mocked Relic");
+    expect(saved).toHaveLength(2);
   });
 });

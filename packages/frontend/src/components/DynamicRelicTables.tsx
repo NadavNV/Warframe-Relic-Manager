@@ -178,7 +178,14 @@ export default function DynamicRelicTables({
                       const isCompleted = completedCells.has(cellId);
                       const componentData =
                         itemData[item.itemName]?.[component.componentName];
-                      const relicList = componentData?.relics ?? [];
+                      const rawRelicList = componentData?.relics ?? [];
+
+                      // Sort by inventory count (descending), falling back to alphabetical order
+                      const relicList = [...rawRelicList].sort((a, b) => {
+                        const countDiff =
+                          (relicInventory[b] ?? 0) - (relicInventory[a] ?? 0);
+                        return countDiff !== 0 ? countDiff : a.localeCompare(b);
+                      });
 
                       return (
                         <td

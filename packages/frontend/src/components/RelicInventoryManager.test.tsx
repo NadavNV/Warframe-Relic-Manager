@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import RelicInventoryManager from "./RelicInventoryManager";
 
-// 1. Mock the raw JSON data
+// Mock the raw JSON data
 vi.mock("../utils/dataValidation", () => ({
   validatedItemData: {
     "Test Prime": {
@@ -17,12 +17,15 @@ vi.mock("../utils/dataValidation", () => ({
 
 describe("RelicInventoryManager Component", () => {
   const mockOnUpdateRelicCount = vi.fn();
+  const mockOnTogglePin = vi.fn();
 
   const defaultProps = {
     relicInventory: { "Lith T1": 2 },
     onUpdateRelicCount: mockOnUpdateRelicCount,
     desiredItems: [{ id: "item-1", itemName: "Test Prime" }],
     completedCells: new Set<string>(),
+    pinnedRelics: new Set<string>(),
+    onTogglePin: mockOnTogglePin,
   };
 
   beforeEach(() => {
