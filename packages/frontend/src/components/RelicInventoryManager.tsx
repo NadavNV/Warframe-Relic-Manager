@@ -11,6 +11,8 @@ interface RelicInventoryProps {
   onUpdateRelicCount: (relic: string, count: number) => void;
   desiredItems: DesiredItem[];
   completedCells: Set<string>;
+  pinnedRelics: Set<string>;
+  onTogglePin: (relic: string) => void;
 }
 
 interface TrackedReward {
@@ -28,6 +30,8 @@ export default function RelicInventoryManager({
   onUpdateRelicCount,
   desiredItems,
   completedCells,
+  pinnedRelics,
+  onTogglePin,
 }: RelicInventoryProps) {
   const [sortBy, setSortBy] = useState<SortOption>("name");
   const [activeEras, setActiveEras] = useState<Set<EraOption>>(
@@ -104,6 +108,14 @@ export default function RelicInventoryManager({
       return Array.from(activeEras).some((era) => relic.startsWith(era));
     })
     .sort((a, b) => {
+      const aPinned = pinnedRelics.has(a);
+      const bPinned = pinnedRelics.has(b);
+
+      // Pinned items always float to the top
+      if (aPinned && !bPinned) return -1;
+      if (!aPinned && bPinned) return 1;
+
+      // Standard sorting applies if both are pinned or neither are pinned
       if (sortBy === "owned") {
         const countA = relicInventory[a] || 0;
         const countB = relicInventory[b] || 0;
@@ -196,7 +208,7 @@ export default function RelicInventoryManager({
 
       {/* Column Headers */}
       <div className="hidden sm:flex items-center py-2 border-b-2 border-gray-700 mb-2 text-xs text-gray-400 font-bold uppercase tracking-wider gap-4">
-        <div className="w-32 shrink-0 pl-1">Relic</div>
+        <div className="w-36 shrink-0 pl-1">Relic</div>
         <div className="w-40 shrink-0 text-center">Owned</div>
         <div className="flex-1 ml-4">Tracked Rewards</div>
       </div>
@@ -216,8 +228,37 @@ export default function RelicInventoryManager({
                 key={relic}
                 className="flex flex-col sm:flex-row items-start sm:items-center py-4 border-b border-gray-800 last:border-0 gap-4"
               >
-                <div className="w-32 shrink-0 font-bold text-gray-200 tracking-wide">
-                  {relic}
+                <div className="w-36 shrink-0 flex items-center gap-3">
+                  <button
+                    onClick={() => onTogglePin(relic)}
+                    // Added mt-0.5 to nudge it down 2px, and shrink-0 so the star never squishes
+                    className="focus:outline-hidden cursor-pointer mt-0.5 flex items-center shrink-0"
+                    title={
+                      pinnedRelics.has(relic)
+                        ? "Unpin relic"
+                        : "Pin relic to top"
+                    }
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      className={`w-5 h-5 transition-colors ${
+                        pinnedRelics.has(relic)
+                          ? "fill-orokin-gold text-orokin-gold"
+                          : "fill-none text-gray-500 hover:text-gray-300"
+                      }`}
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  </button>
+                  {/* Added leading-none to remove the invisible text padding for better flex alignment */}
+                  <span className="font-bold text-gray-200 tracking-wide leading-none">
+                    {relic}
+                  </span>
                 </div>
 
                 <div className="flex items-center gap-2 shrink-0">
